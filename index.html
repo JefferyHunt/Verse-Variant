@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verse & Variant: Fragments of Antiquity - Rules</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Verse &amp; Variant: Fragments of Antiquity - Rules</title>
+<style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap');
         
         * {
@@ -40,7 +41,7 @@
         @media print {
             @page {
                 size: 8.5in 11in;
-		margin: 0in;
+		margin: 1in;
             }
 
 	    body { margin: 0; background: white; }
@@ -305,1387 +306,1289 @@
             font-size: 10pt;
             color: #666;
         }
-    </style>
+    
+@media print {
+  .page-break {
+    break-before: page;
+    page-break-before: always;
+  }
+}
+</style>
 </head>
 <body>
-    <!-- Page 1: Title and TOC -->
-    <div class="page">
-        <h1>VERSE & VARIANT</h1>
-        <p class="subtitle">Fragments of Antiquity</p>
-        
-        <div class="toc">
-            <h3 style="text-align: center; margin-bottom: 20pt;">Contents</h3>
-            <div class="toc-item">
-                <span>Components</span>
-                <span class="toc-dots"></span>
-                <span>2</span>
-            </div>
-            <div class="toc-item">
-                <span>Setup</span>
-                <span class="toc-dots"></span>
-                <span>2</span>
-            </div>
-            <div class="toc-item">
-                <span>Game Overview</span>
-                <span class="toc-dots"></span>
-                <span>3</span>
-            </div>
-            <div class="toc-item">
-                <span>Haggling Bout Procedure</span>
-                <span class="toc-dots"></span>
-                <span>4</span>
-            </div>
-            <div class="toc-item">
-                <span>Institution Grants</span>
-                <span class="toc-dots"></span>
-                <span>6</span>
-            </div>
-            <div class="toc-item">
-                <span>End of Session</span>
-                <span class="toc-dots"></span>
-                <span>7</span>
-            </div>
-            <div class="toc-item">
-                <span>Final Scoring</span>
-                <span class="toc-dots"></span>
-                <span>8</span>
-            </div>
-            <div class="toc-item">
-                <span>Card Reference</span>
-                <span class="toc-dots"></span>
-                <span>9</span>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Page 2: Components and Setup -->
-    <div class="page">
-        <h2>Components</h2>
-        
-        <div class="component-list">
-            <ul>
-                <li><strong>120 Document Cards</strong>
-                    <ul style="margin-left: 20pt; list-style: none;">
-                        <li>75 Tool Cards (five different Tools for each rank, 1–15)</li>
-                        <li>45 Witness Cards (ranks 1–9 in five Scriptorium Colors)</li>
-                    </ul>
-                </li>
-                <li><strong>1 Spotlight-Track Board</strong> (5 tracks, 1 for each Scriptorium Color, 0→6 spaces)</li>
-                <li><strong>5 Spotlight-Demand Markers</strong></li>
-                <li><strong>75 Feature Tokens</strong></li>
-                <li><strong>35 Lacuna Tokens</strong></li>
-                <li><strong>5 Institution Boards</strong></li>
-                <li><strong>1 Edition Laureate Token</strong></li>
-                <li><strong>20 Preservation-Grant Markers</strong> (4 in each player color)</li>
-                <li><strong>5 Archive-Lockdown Tiles</strong></li>
-                <li><strong>5 Eureka Discs</strong></li>
-                <li><strong>30 Cubes</strong> (6 in each player color)</li>
-                <li><strong>1 Start-Player Quill</strong></li>
-                <li><strong>5 Player Aid Reference Sheets</strong></li>
-                <li><strong>1 Prestige Track</strong></li>
-            </ul>
-        </div>
-        
-        <div class="icon-key">
-            <h4>Manuscript Features & Text-Critical Symbols</h4>
-            <dl>
-                <dt>𝔓</dt><dd>Papyrus Fragment</dd>
-                <dt>𝔐</dt><dd>Majority Text</dd>
-                <dt>א</dt><dd>Codex Sinaiticus</dd>
-                <dt>//</dt><dd>Section Division</dd>
-                <dt>{A}</dt><dd>UBS Rating "A"</dd>
-                <dt>[…]</dt><dd>Lacuna (missing text)</dd>
-                <dt>†</dt><dd>Corruption</dd>
-            </dl>
-        </div>
-        
-        <h2>Setup</h2>
-        
-        <div class="setup-box">
-            <p>Perform each step in order:</p>
-            
-            <h4>1. Choose a Starting Scholar</h4>
-            <p>Randomly give the Start-Player Quill to one player; play proceeds clockwise.</p>
-            
-            <h4>2. Prepare the Document Deck</h4>
-            <p><strong>a. Prepare the Tools</strong></p>
-            <ol>
-                <li>Shuffle the 5 cards of rank T-1 face-down; draw one at random.</li>
-                <li>Repeat for ranks T-2 through T-15.</li>
-                <li>Return the unused Tools to the box without revealing them.</li>
-            </ol>
-            <p><strong>b. Combine Cards</strong></p>
-            <p>Combine the 15 selected Tool cards with the 45 Witness cards; shuffle into a single 60-card deck.</p>
-            
-            <h4>3. Deal Cards</h4>
-            <ul>
-                <li>3 players: 20 cards each</li>
-                <li>4 players: 15 cards each</li>
-                <li>5 players: 12 cards each</li>
-            </ul>
-            
-            <h4>4. Place Spotlight-Track Board</h4>
-            <p>Place the board near the Reading Desk and place a Spotlight Demand Marker on space 3 of each track.</p>
-            
-            <h4>5. Prepare the Institutions</h4>
-            <p>Arrange the five Institution Boards in any order. Place the Edition Laureate token next to the row.</p>
-            
-            <h4>6. Give Each Player</h4>
-            <p><strong>Preservation-Grant markers:</strong></p>
-            <ul>
-                <li>3 scholars → 5 Grants each</li>
-                <li>4 scholars → 4 Grants each</li>
-                <li>5 scholars → 3 Grants each</li>
-            </ul>
-            <p><strong>Other components:</strong></p>
-            <ul>
-                <li>1 Archive-Lockdown tile</li>
-                <li>Research cubes: 5 (3p), 4 (4p), 4 (5p)</li>
-            </ul>
-            
-            <h4>7. Prepare Play Area</h4>
-            <p>Leave space in the center of the table for the Reading Desk, the communal display where cards from each bout will accumulate.</p>
-            
-            <h4>8. Set Up Prestige Track</h4>
-            <p>Place the board with the Prestige Track to the side. Place 1 cube in each player color on space 0.</p>
-        </div>
-    </div>
-    
-    <!-- Page 3: Game Overview -->
-    <div class="page">
-        <h2>Game Overview</h2>
-        
-        <h3>Objective</h3>
-        <p>Across a number of Collation Sessions equal to the number of scholars, you will gather manuscript fragments, apply scholarly tools, earn grants, and earn prestige by:</p>
-        
-        <ul>
-            <li>Building groups and majorities of Manuscript Features</li>
-            <li>Assembling complete Critical Sets (one of each Feature)</li>
-            <li>Obtaining Institution Grants for immediate rewards and end-game points</li>
-            <li>Conserving Grants and securing the Edition Laureate bonus</li>
-        </ul>
-        
-        <p>The scholar with the highest Prestige total after final scoring is hailed <strong>Editor-in-Chief</strong> of the new critical edition.</p>
-        
-        <h3>Session Structure</h3>
-        <p>A session consists of a sequence of <span class="term">Haggling Bouts</span>—classic trick-taking rounds—until every scholar's hand is empty.</p>
-        
-        <p>Each Bout follows this rhythm:</p>
-        
-        <ol>
-            <li><strong>Play Witness & Echo</strong>
+<!-- Page 1: Title and TOC -->
+<div class="page">
+<h1>VERSE &amp; VARIANT</h1>
+<p class="subtitle">Fragments of Antiquity</p>
+<div class="toc">
+<h3 style="text-align: center; margin-bottom: 20pt;">Contents</h3>
+<div class="toc-item">
+<span>Components</span>
+<span class="toc-dots"></span>
+<span>2</span>
+</div>
+<div class="toc-item">
+<span>Setup</span>
+<span class="toc-dots"></span>
+<span>2</span>
+</div>
+<div class="toc-item">
+<span>Game Overview</span>
+<span class="toc-dots"></span>
+<span>3</span>
+</div>
+<div class="toc-item">
+<span>Haggling Bout Procedure</span>
+<span class="toc-dots"></span>
+<span>4</span>
+</div>
+<div class="toc-item">
+<span>Institution Grants</span>
+<span class="toc-dots"></span>
+<span>6</span>
+</div>
+<div class="toc-item">
+<span>End of Session</span>
+<span class="toc-dots"></span>
+<span>7</span>
+</div>
+<div class="toc-item">
+<span>Final Scoring</span>
+<span class="toc-dots"></span>
+<span>8</span>
+</div>
+<div class="toc-item">
+<span>Card Reference</span>
+<span class="toc-dots"></span>
+<span>9</span>
+</div>
+</div>
+</div>
+<div class="page-break"></div>
+<!-- Page 2: Components and Setup -->
+<div class="page-break"></div><div class="page">
+<h2>Components</h2>
+<div class="component-list">
+<ul>
+<li><strong>120 Document Cards</strong>
+<ul style="margin-left: 20pt; list-style: none;">
+<li>75 Tool Cards (five different Tools for each rank, 1–15)</li>
+<li>45 Witness Cards (ranks 1–9 in five Scriptorium Colors)</li>
+</ul>
+</li>
+<li><strong>1 Spotlight-Track Board</strong> (5 tracks, 1 for each Scriptorium Color, 0→21</li>
+<li> spaces)</li>
+<li><strong>275 Feature Tokens</strong></li>
+<li><strong>75 Lacuna Tokens</strong></li>
+<li><strong>5 Institution Boards</strong></li>
+<li><strong>1 Edition Laureate Token</strong></li>
+<li><strong>20 Preservation-Grant Markers</strong> (4 in each player color)</li>
+<li><strong>5 Archive-Lockdown Tiles</strong></li>
+<li><strong>5 Eureka Discs</strong></li>
+<li><strong>30 Cubes</strong> (6 in each player color)</li>
+<li><strong>1 Start-Player Quill</strong></li>
+<li><strong>5 Player Aid Reference Sheets</strong></li>
+<li><strong>1 Prestige Track</strong></li>
+</ul>
+</div>
+<div class="icon-key">
+<h4>Manuscript Features &amp; Text-Critical Symbols</h4>
+<dl>
+<dt>𝔓</dt><dd>Papyrus Fragment</dd>
+<dt>𝔐</dt><dd>Majority Text</dd>
+<dt>א</dt><dd>Codex Sinaiticus</dd>
+<dt>//</dt><dd>Section Division</dd>
+<dt>{A}</dt><dd>UBS Rating "A"</dd>
+<dt>[…]</dt><dd>Lacuna (missing text)</dd>
+<dt>†</dt><dd>Corruption</dd>
+</dl>
+</div>
+<h2>Setup</h2>
+<div class="setup-box">
+<p>Perform each step in order:</p>
+<h4>1. Choose a Starting Scholar</h4>
+<p>Randomly give the Start-Player Quill to one player; play proceeds clockwise.</p>
+<h4>2. Prepare the Document Deck</h4>
+<p><strong>a. Prepare the Tools</strong></p>
+<ol>
+<li>Shuffle the 5 cards of rank T-1 face-down; draw one at random.</li>
+<li>Repeat for ranks T-2 through T-15.</li>
+<li>Return the unused Tools to the box without revealing them.</li>
+</ol>
+<p><strong>b. Combine Cards</strong></p>
+<p>Combine the 15 selected Tool cards with the 45 Witness cards; shuffle into a single 60-card deck.</p>
+<h4>3. Deal Cards</h4>
+<ul>
+<li>3 players: 20 cards each</li>
+<li>4 players: 15 cards each</li>
+<li>5 players: 12 cards each</li>
+</ul>
+<h4>4. Place Spotlight-Track Board</h4>
+<p>Place the board near the Reading Desk. On each space of each track, beginning with the highest space, in a 3 player game, place alternating stacks of 1 and 2 of each track's assocaited Feature Token, in a 4 player game, stacks of 2, and in a 5 player game, alternating stacks of 2 and 3.</p>
+<h4>5. Prepare the Institutions</h4>
+<p>Arrange the five Institution Boards in any order. Place the Edition Laureate token next to the row.</p>
+<h4>6. Give Each Player</h4>
+<p><strong>Preservation-Grant markers:</strong></p>
+<ul>
+<li>3 scholars → 5 Grants each</li>
+<li>4 scholars → 4 Grants each</li>
+<li>5 scholars → 3 Grants each</li>
+</ul>
+<p><strong>Other components:</strong></p>
+<ul>
+<li>1 Archive-Lockdown tile</li>
+<li>Research cubes: 5 (3p), 4 (4p), 4 (5p)</li>
+</ul>
+<h4>7. Prepare Play Area</h4>
+<p>Leave space in the center of the table for the Reading Desk, the communal display where cards from each bout will accumulate.</p>
+<h4>8. Set Up Prestige Track</h4>
+<p>Place the board with the Prestige Track to the side. Place 1 cube in each player color on space 0.</p>
+</div>
+</div>
+<!-- Page 3: Game Overview -->
+<div class="page-break"></div><div class="page">
+<h2>Game Overview</h2>
+<h3>Objective</h3>
+<p>Across a number of Collation Sessions equal to the number of scholars, you will gather manuscript fragments, apply scholarly tools, earn grants, and earn prestige by:</p>
+<ul>
+<li>Building groups and majorities of Manuscript Features</li>
+<li>Assembling complete Critical Sets (one of each Feature)</li>
+<li>Obtaining Institution Grants for immediate rewards and end-game points</li>
+<li>Conserving Grants and securing the Edition Laureate bonus</li>
+</ul>
+<p>The scholar with the highest Prestige total after final scoring is hailed <strong>Editor-in-Chief</strong> of the new critical edition.</p>
+<h3>Session Structure</h3>
+<p>A session consists of a sequence of <span class="term">Haggling Bouts</span>—classic trick-taking rounds—until every scholar's hand is empty.</p>
+<p>Each Bout follows this rhythm:</p>
+<ol>
+<li><strong>Play Witness &amp; Echo</strong>
+<ul>
+<li>All scholars play one open card to contest the bout.</li>
+<li>If able, they simultaneously contribute a hidden echo card to the Reading Desk.</li>
+</ul>
+</li>
+<li><strong>Resolve the Bout</strong>
+<ul>
+<li>Card hierarchy: Tools (trump) &gt; current Spotlight Scriptorium wins ties &amp; otherwise = lead color &gt; others; highest wins.</li>
+<li>The player of the highest losing card gains a Eureka disc if they don't already have one.</li>
+</ul>
+</li>
+<li><strong>Archive to the Reading Desk</strong>
+<ul>
+<li>All primary and echo cards join the Reading Desk face up.</li>
+</ul>
+</li>
+<li><strong>Preservation Window</strong>
+<ul>
+<li>In finish order, scholars may spend a Grant to claim the entire Desk.</li>
+<li>Passing hands the option downward—unless someone exercises an Archive-Lockdown to close the window instantly.</li>
+</ul>
+</li>
+<li><strong>Institution Check</strong>
+<ul>
+<li>A scholar who just claimed the Desk may fill one Institution slot by discarding 2 copies of its Feature from their evidence ledger.</li>
+</ul>
+</li>
+<li><strong>Lead Passes</strong>
+<ul>
+<li>Lead passes to the bout winner; another bout begins.</li>
+</ul>
+</li>
+</ol>
+<div class="rule-note">
+<p><strong>Deck Flow Note:</strong> With echo play, each bout normally burns two cards per scholar. In a four-player game, the 15-card hand yields seven full echo bouts plus one final orphan bout without echoes.</p>
+</div>
+<h3>End of a Collation Session</h3>
+<p>When all hands are empty and the last Preservation Window is resolved, any cards still on the Reading Desk are ignored. Proceed to Final Scoring to determine the winner.</p>
+</div>
+<!-- Page 4-5: Haggling Bout Procedure -->
+<div class="page-break"></div><div class="page">
+<h2>Haggling Bout Procedure</h2>
+<h3>4.1 Play Primary &amp; Echo Cards</h3>
+<p>Proceed clockwise from the scholar with the Start-Player Quill. On your turn, perform 2 or 3 steps in this exact order:</p>
+<ol>
+<li><strong>(Optional) Spend Eureka</strong>
+<p>If you currently hold an unused Eureka disc, you may discard it to the supply. Doing so grants +2 virtual rank to the Primary card you are about to play (Tools included).</p>
+<ul>
+<li>You can never hold more than one Eureka, so you either spend it now or keep it for a later bout.</li>
+<li>Once discarded, the bonus is locked in; you cannot retract it if other scholars subsequently boost their own ranks.</li>
+</ul>
+</li>
+<li><strong>Choose &amp; place your two cards</strong>
+<ul>
+<li><strong>Primary slot:</strong> Play one card face-up (Witness or Tool).</li>
+<li><strong>Echo slot:</strong> Play one card face-down directly onto the Reading Desk (Witness or Tool). Echo cards never influence bout rank.</li>
+</ul>
+</li>
+</ol>
+<p>When every scholar has completed step 2, continue to 4.3 Determine Highest Cards.</p>
+<h3>4.2 Tool Timing</h3>
+<table class="table">
+<tr>
+<th>Where the Tool is played</th>
+<th>What happens</th>
+</tr>
+<tr>
+<td><strong>Primary slot</strong> (face-up)</td>
+<td>
+<ul style="margin: 0; padding-left: 16pt;">
+<li>If the Tool's timing row includes "Instant," you must resolve the effect immediately and then add it to the Reading Desk.</li>
+<li>If the Tool's printed timing is anything other than Instant, add it to the scholar's tableau and resolve it according to its printed rule. Add to Desk after triggering.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Echo slot</strong> (face-down onto the Reading Desk)</td>
+<td>
+<ul style="margin: 0; padding-left: 16pt;">
+<li>The power never triggers at this moment regardless of timing text.</li>
+<li>When the Reading Desk is later claimed, that Tool may be acquired via the Lacuna Exchange rule in 4.6.5	, otherwise, it is discarded.</li>
+</ul>
+</td>
+</tr>
+</table>
+<h3>4.3 Determine Highest Cards</h3>
+<ol>
+<li><strong>Tool cards (trump)</strong> — higher rank wins.</li>
+<li><strong>Witnesses of the Lead Scriptorium and Witnesses of the Spotlight Scriptorium</strong> — evaluate together:
                 <ul>
-                    <li>All scholars play one open card to contest the bout.</li>
-                    <li>If able, they simultaneously contribute a hidden echo card to the Reading Desk.</li>
-                </ul>
-            </li>
-            <li><strong>Resolve the Bout</strong>
+<li>Compare ranks; the highest numeric value among these cards wins.</li>
+<li>If two cards are tied for highest rank and one of them is Spotlight, the Spotlight card wins the tie.</li>
+</ul>
+</li>
+<li><strong>Cards of other colors</strong> can never outrank Lead or Spotlight cards (unless a Tool says otherwise).</li>
+</ol>
+<div class="rule-note">
+<h4>How to evaluate Spotlight:</h4>
+<ul>
+<li>If exactly one color holds the highest demand value, it is Spotlight.</li>
+<li>If two or more colors share that highest value, Spotlight passes to the unique color with the next-highest demand value; if all five colors are tied, Spotlight is off until the tie is broken.</li>
+<li>You are still required to follow the Lead color with your Primary play if able; the Spotlight color does not create an additional follow obligation.</li>
+<li>If the Spotlight and Lead colors are the same, simply treat it as the normal Lead color—no special tie rule applies because a tie cannot occur (only one card per rank in that color).</li>
+</ul>
+</div>
+<h3>4.4 Award Bout &amp; Eureka</h3>
+<ul>
+<li><strong>Winner</strong> – highest Primary card; takes the Quill for next bout.</li>
+<li><strong>Eureka</strong> – highest losing Primary card gains a Eureka disc if they do not already hold one.</li>
+</ul>
+<h3>4.5 Reveal Echoes &amp; Move Cards to Desk</h3>
+<p>Turn all face-down Echo cards face-up; they, together with all Primary cards, now are added to the Reading Desk.</p>
+</div>
+<div class="page-break"></div><div class="page">
+<h3>4.6 Preservation Window</h3>
+<p>In finish order—winner, 2nd, 3rd…, each scholar must:</p>
+<ol>
+<li><strong>Take:</strong> spend one unused Preservation-Grant to claim the entire Desk.</li>
+<li><strong>Pass:</strong> do nothing. If all players pass (once around), the preservation window closes.</li>
+<li><strong>Archive-Lockdown:</strong> Flip Archive-Lockdown tile to its used side; all remaining scholars in this window are skipped and the Desk stays. The Preservation Window closes. This may only be done once per scholar, per Collation Session.</li>
+</ol>
+<div class="setup-box">
+<h4>Claiming a Reading Desk</h4>
+<p>When you declare "Take" during the Preservation Window, carry out these eight numbered steps in order:</p>
+<ol>
+<li><strong>Spend a Preservation-Grant.</strong>
+<p>Flip one of your unused Grant markers to its spent side.</p>
+</li>
+<li><strong>Trigger any "when you claim a Desk" Tools.</strong>
+<p>If you already had delayed Tools waiting for this moment, you may activate them now.</p>
+</li>
+<li><strong>Sweep the Desk.</strong>
+<p>Slide every card—Primary and Echo, Witness and Tool—into your play area.</p>
+<li><strong>Tokenise your haul.</strong>
+<ul>
+<li>For each Feature or Lacuna on a Witness card, take a Feature or Lacuna token into your Evidence Ledger. Take the Feature Tokens from the matching Spotlight Demand Track. If you uncover a bonus, recieve it now. If the Spotlight track is empty, take the Feature Token from the supply. If the supply is empty, use a suitable substitute. Take Lacuna Tokens from the supply.   </li>
+<li>For each Corruption, discard two of the associated Feature Tokens from your Evidence Ledger.</li>
+<li>Discard all Witness Cards.</li>
+</ul>
+</li>
+<li><strong>Lacuna Exchange (optional).</strong>
+<p>The Reading Desk may contain Tool cards. You may repeat the following sequence as often as you wish, limited by the number of Lacuna tokens in your Ledger and the number of Tools in this haul:</p>
+<ol type="a">
+<li>Discard two Lacuna tokens.</li>
+<li>Place any one card from your hand face-up to your tableau; if it is a Witness, immediately tokenise it as in Step 4.</li>
+<li>Choose one Tool from this Desk haul and place it into your hand.</li>
+<li>Discard any leftover Tools not exchanged.</li>
+</ol>
+</li>
+<li><strong>Institution Grant Check (optional).</strong>
+<p>Each Institution is looking for certain features. You may fill one grant slot per Preservation Window. For the Grant slot you wish to fill, place the Feature tokens required be its Institution   from your Ledger onto the matching Spotlight Demand Track, one space per token (If the track is full, put the tokens in the supply), then place one of your Research cubes on the left-most empty slot of that Institution.</p>
+<p>Resolve that slot's point reward and perk.</p>
+</li>
+<li><strong>Close the Preservation Window and continue play.</strong></li>
+</li></ol>
+</div>
+<p>The Preservation Window ends immediately when any one of the following occurs:</p>
+<ul>
+<li>A scholar Takes the Reading Desk (the Desk is now empty).</li>
+<li>Every scholar Passes in turn, leaving the Desk untouched.</li>
+<li>A scholar plays their Archive-Lockdown tile, halting further decisions and the Desk is left untouched.</li>
+</ul>
+<p>If at least one card remains in every scholar's hand, the bout winner now takes the Start-Player Quill and leads the next bout. If all hands are empty, the Collation Session ends—carry out Majority Scoring (see § 4.7); after the last Majority Scoring, proceed to Final Scoring (see § 7).</p>
+<h3>4.7 Majority Scoring</h3>
+<p>The scholars compare their Evidence Ledgers:</p>
+<ul>
+<li>The Feature that matches the <strong>Spotlight Color</strong> scores 1st, 2nd, and 3rd Place.
                 <ul>
-                    <li>Card hierarchy: Tools (trump) > current Spotlight Scriptorium wins ties & otherwise = lead color > others; highest wins.</li>
-                    <li>The player of the highest losing card gains a Eureka disc if they don't already have one.</li>
-                </ul>
-            </li>
-            <li><strong>Archive to the Reading Desk</strong>
+<li>1st: +7★ / 2nd: +4★ / 3rd: +1★</li>
+</ul>
+</li>
+<li>The Feature that matches the <strong>Lead color</strong> of the current Session's bout will score 1st and 2nd Place.
                 <ul>
-                    <li>All primary and echo cards join the Reading Desk face up.</li>
-                </ul>
-            </li>
-            <li><strong>Preservation Window</strong>
+<li>1st: +5★ / 2nd: +3★</li>
+</ul>
+</li>
+<li>All other features will score 1st place only.
                 <ul>
-                    <li>In finish order, scholars may spend a Grant to claim the entire Desk.</li>
-                    <li>Passing hands the option downward—unless someone exercises an Archive-Lockdown to close the window instantly.</li>
-                </ul>
-            </li>
-            <li><strong>Institution Check</strong>
-                <ul>
-                    <li>A scholar who just claimed the Desk may fill one Institution slot by discarding 2 copies of its Feature from their evidence ledger.</li>
-                </ul>
-            </li>
-            <li><strong>Lead Passes</strong>
-                <ul>
-                    <li>Lead passes to the bout winner; another bout begins.</li>
-                </ul>
-            </li>
-        </ol>
-        
-        <div class="rule-note">
-            <p><strong>Deck Flow Note:</strong> With echo play, each bout normally burns two cards per scholar. In a four-player game, the 15-card hand yields seven full echo bouts plus one final orphan bout without echoes.</p>
-        </div>
-        
-        <h3>End of a Collation Session</h3>
-        <p>When all hands are empty and the last Preservation Window is resolved, any cards still on the Reading Desk are ignored. Proceed to Final Scoring to determine the winner.</p>
-    </div>
-    
-    <!-- Page 4-5: Haggling Bout Procedure -->
-    <div class="page">
-        <h2>Haggling Bout Procedure</h2>
-        
-        <h3>4.1 Play Primary & Echo Cards</h3>
-        <p>Proceed clockwise from the scholar with the Start-Player Quill. On your turn, perform 2 or 3 steps in this exact order:</p>
-        
-        <ol>
-            <li><strong>(Optional) Spend Eureka</strong>
-                <p>If you currently hold an unused Eureka disc, you may discard it to the supply. Doing so grants +2 virtual rank to the Primary card you are about to play (Tools included).</p>
-                <ul>
-                    <li>You can never hold more than one Eureka, so you either spend it now or keep it for a later bout.</li>
-                    <li>Once discarded, the bonus is locked in; you cannot retract it if other scholars subsequently boost their own ranks.</li>
-                </ul>
-            </li>
-            
-            <li><strong>Choose & place your two cards</strong>
-                <ul>
-                    <li><strong>Primary slot:</strong> Play one card face-up (Witness or Tool).</li>
-                    <li><strong>Echo slot:</strong> Play one card face-down directly onto the Reading Desk (Witness or Tool). Echo cards never influence bout rank.</li>
-                </ul>
-            </li>
-        </ol>
-        
-        <p>When every scholar has completed step 2, continue to 4.3 Determine Highest Cards.</p>
-        
-        <h3>4.2 Tool Timing</h3>
-        
-        <table class="table">
-            <tr>
-                <th>Where the Tool is played</th>
-                <th>What happens</th>
-            </tr>
-            <tr>
-                <td><strong>Primary slot</strong> (face-up)</td>
-                <td>
-                    <ul style="margin: 0; padding-left: 16pt;">
-                        <li>If the Tool's timing row includes "Instant," you must resolve the effect immediately and then add it to the Reading Desk.</li>
-                        <li>If the Tool's printed timing is anything other than Instant, add it to the scholar's tableau and resolve it according to its printed rule. Add to Desk after triggering.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td><strong>Echo slot</strong> (face-down onto the Reading Desk)</td>
-                <td>
-                    <ul style="margin: 0; padding-left: 16pt;">
-                        <li>The power never triggers at this moment regardless of timing text.</li>
-                        <li>When the Reading Desk is later claimed, that Tool may be acquired via the Lacuna Exchange rule in 4.6.5	, otherwise, it is discarded.</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        
-        <h3>4.3 Determine Highest Cards</h3>
-        
-        <ol>
-            <li><strong>Tool cards (trump)</strong> — higher rank wins.</li>
-            <li><strong>Witnesses of the Lead Scriptorium and Witnesses of the Spotlight Scriptorium</strong> — evaluate together:
-                <ul>
-                    <li>Compare ranks; the highest numeric value among these cards wins.</li>
-                    <li>If two cards are tied for highest rank and one of them is Spotlight, the Spotlight card wins the tie.</li>
-                </ul>
-            </li>
-            <li><strong>Cards of other colors</strong> can never outrank Lead or Spotlight cards (unless a Tool says otherwise).</li>
-        </ol>
-        
-        <div class="rule-note">
-            <h4>How to evaluate Spotlight:</h4>
-            <ul>
-                <li>If exactly one color holds the highest demand value, it is Spotlight.</li>
-                <li>If two or more colors share that highest value, Spotlight passes to the unique color with the next-highest demand value; if all five colors are tied, Spotlight is off until the tie is broken.</li>
-                <li>You are still required to follow the Lead color with your Primary play if able; the Spotlight color does not create an additional follow obligation.</li>
-                <li>If the Spotlight and Lead colors are the same, simply treat it as the normal Lead color—no special tie rule applies because a tie cannot occur (only one card per rank in that color).</li>
-            </ul>
-        </div>
-        
-        <h3>4.4 Award Bout & Eureka</h3>
-        <ul>
-            <li><strong>Winner</strong> – highest Primary card; takes the Quill for next bout.</li>
-            <li><strong>Eureka</strong> – highest losing Primary card gains a Eureka disc if they do not already hold one.</li>
-        </ul>
-        
-        <h3>4.5 Reveal Echoes & Move Cards to Desk</h3>
-        <p>Turn all face-down Echo cards face-up; they, together with all Primary cards, now are added to the Reading Desk.</p>
-    </div>
-    
-    <div class="page">
-        <h3>4.6 Preservation Window</h3>
-        <p>In finish order—winner, 2nd, 3rd…, each scholar must:</p>
-        
-        <ol>
-            <li><strong>Take:</strong> spend one unused Preservation-Grant to claim the entire Desk.</li>
-            <li><strong>Pass:</strong> do nothing. If all players pass (once around), the preservation window closes.</li>
-            <li><strong>Archive-Lockdown:</strong> Flip Archive-Lockdown tile to its used side; all remaining scholars in this window are skipped and the Desk stays. The Preservation Window closes. This may only be done once per scholar, per Collation Session.</li>
-        </ol>
-        
-        <div class="setup-box">
-            <h4>Claiming a Reading Desk</h4>
-            <p>When you declare "Take" during the Preservation Window, carry out these eight numbered steps in order:</p>
-            
-            <ol>
-                <li><strong>Spend a Preservation-Grant.</strong>
-                    <p>Flip one of your unused Grant markers to its spent side.</p>
-                </li>
-                
-                <li><strong>Sweep the Desk.</strong>
-                    <p>Slide every card—Primary and Echo, Witness and Tool—into your play area.</p>
-                </li>
-                
-                <li><strong>Adjust Demand for new supply.</strong>
-                    <p>For every Scriptorium Color among the Witness cards you just took, move that color's Demand Marker down one step on the 0–6 Demand Track (never below 0).</p>
-                </li>
-                
-                <li><strong>Tokenise your haul.</strong>
-                    <ul>
-                        <li>For each Feature or Lacuna on a Witness card, take the matching Feature or Lacuna token into your Evidence Ledger.</li>
-                        <li>For each Corruption, discard two of the associated Feature Tokens from your Evidence Ledger.</li>
-                        <li>Discard all Witness Cards.</li>
-                    </ul>
-                </li>
-                
-                <li><strong>Lacuna Exchange (optional).</strong>
-                    <p>The Reading Desk may contain Tool cards. You may repeat the following sequence as often as you wish, limited by the number of Lacuna tokens in your Ledger and the number of Tools in this haul:</p>
-                    <ol type="a">
-                        <li>Discard two Lacuna tokens.</li>
-                        <li>Place any one card from your hand face-up to your tableau; if it is a Witness, immediately tokenise it as in Step 4.</li>
-                        <li>Choose one Tool from this Desk haul and place it into your hand.</li>
-                        <li>Discard any leftover Tools not exchanged.</li>
-                    </ol>
-                </li>
-                
-                <li><strong>Institution Grant Check (optional).</strong>
-                    <p>Each Institution is looking for certain features. You may fill one grant slot per Preservation Window. For the Grant slot you wish to fill, discard two matching Feature tokens from your Ledger, then place one of your Research cubes on the left-most empty slot of that Institution.</p>
-                    <p>Resolve that slot's point reward and perk, and move that Feature's Demand Marker up two steps (never above 6).</p>
-                </li>
-                
-                <li><strong>Trigger any "when you claim a Desk" Tools.</strong>
-                    <p>If you already had delayed Tools waiting for this moment, you may activate them now.</p>
-                </li>
-                
-                <li><strong>Close the Preservation Window and continue play.</strong></li>
-            </ol>
-        </div>
-        
-        <p>The Preservation Window ends immediately when any one of the following occurs:</p>
-        <ul>
-            <li>A scholar Takes the Reading Desk (the Desk is now empty).</li>
-            <li>Every scholar Passes in turn, leaving the Desk untouched.</li>
-            <li>A scholar plays their Archive-Lockdown tile, halting further decisions and the Desk is left untouched.</li>
-        </ul>
-        
-        <p>If at least one card remains in every scholar's hand, the bout winner now takes the Start-Player Quill and leads the next bout. If all hands are empty, the Collation Session ends—carry out Majority Scoring (see § 4.7); after the last Majority Scoring, proceed to Final Scoring (see § 7).</p>
-        
-        <h3>4.7 Majority Scoring</h3>
-        <p>The scholars compare their Evidence Ledgers:</p>
-        
-        <ul>
-            <li>The Feature that matches the <strong>Spotlight Color</strong> scores 1st, 2nd, and 3rd Place.
-                <ul>
-                    <li>1st: +7★ / 2nd: +4★ / 3rd: +1★</li>
-                </ul>
-            </li>
-            <li>The Feature that matches the <strong>Lead color</strong> of the current Session's bout will score 1st and 2nd Place.
-                <ul>
-                    <li>1st: +5★ / 2nd: +3★</li>
-                </ul>
-            </li>
-            <li>All other features will score 1st place only.
-                <ul>
-                    <li>1st: +2★</li>
-                </ul>
-            </li>
-        </ul>
-        
-        <p>Keep score on the Score Track.</p>
-        
-        <h3>4.8 Prepare Next Bout</h3>
-        <ol>
-            <li>If every scholar's hand is empty, the Session ends—go to Final Scoring (§ 7).</li>
-            <li>Otherwise the bout winner leads the next bout, repeating steps 4.1–4.7.</li>
-        </ol>
-        
-        <div class="rule-note">
-            <p><strong>Orphan Bout (4-player only)</strong> – After seven full two-card bouts, every scholar holds exactly one card. In that final bout skip the Echo step entirely; play only a Primary card, then resolve from step 4.2 onward.</p>
-        </div>
-    </div>
-    
-    <!-- Page 6: Institution Grants -->
-    <div class="page">
-        <h2>Institution Grants</h2>
-        
-        <p>The five Institution Boards represent great research libraries that will underwrite your edition if you deliver the manuscript evidence they prize.</p>
-        
-        <h3>5.1 Anatomy of an Institution Board</h3>
-        
-        <p>Each board shows:</p>
-        
-        <table class="table">
-            <tr>
-                <th>Element</th>
-                <th>Meaning</th>
-            </tr>
-            <tr>
-                <td><strong>Feature Seal</strong> (upper left)</td>
-                <td>Indicates the type of Manuscript Feature this Institution will fund.</td>
-            </tr>
-            <tr>
-                <td><strong>Three Grant slots</strong></td>
-                <td>Empty circles, left-to-right. A scholar places a Research cube here when fulfilling the slot.</td>
-            </tr>
-            <tr>
-                <td><strong>Reward banner</strong></td>
-                <td>Printed quick icons: 5★ / +Grant, 3★ / +Lacuna, 1★ / –</td>
-            </tr>
-        </table>
-        
-        <div class="rule-note">
-            <p><strong>Prestige symbol (★)</strong> One ★ equals one Prestige Point.</p>
-        </div>
-        
-        <h3>5.2 Fulfilling a Grant</h3>
-        
-        <p>You may attempt one Grant immediately after you Take the Reading Desk:</p>
-        
-        <ol>
-            <li><strong>Place cube & gain reward</strong> – Put one of your Research cubes on the left-most empty slot of that board and gain the printed reward.</li>
-            <li><strong>Demand rise</strong> – After your cube is placed, move that Feature's Demand Marker up 2 spaces per cube (never beyond space 6).</li>
-        </ol>
-        
-        <h3>5.3 Edition Laureate Token</h3>
-        
-        <p>The moment the fifteenth and final Grant slot across the five boards is filled:</p>
-        
-        <ul>
-            <li>Award the Edition Laureate token to the scholar who placed that closing cube. It grants the scholar an instant bonus: flip one spent Preservation-Grant marker back to unused. Additionally, the Edition Laureate token is worth +4★ Prestige at Final Scoring.</li>
-        </ul>
-    </div>
-    
-    <!-- Page 7: End of Session -->
-    <div class="page">
-        <h2>End-of-Session Checklist</h2>
-        
-        <p>A Collation Session ends the moment all scholars have emptied their hands and the final Preservation Window has been resolved.</p>
-        
-        <h3>6.1 Tokenise any Witness cards still on the Reading Desk</h3>
-        <ul>
-            <li>Convert each remaining Witness card to its matching Feature, Lacuna, or Corruption token and leave those tokens on the Reading Desk.</li>
-            <li>Discard the physical cards (and any Tool cards still on the Desk) to the common discard so that the full 60-card deck can be reshuffled for the next deal.</li>
-            <li>These tokens remain in the Reading Desk and will be part of the very first Preservation Window of the next Collation Session. (If you just finished the final Session, they have no further effect.)</li>
-        </ul>
-        
-        <h3>6.2 Discard unused Tools in Tableau</h3>
-        
-        <h3>6.3 Check for End Game</h3>
-        
-        <div class="setup-box">
-            <h4>Game-End Triggers</h4>
-            <p>The game can finish in one of three ways. Check these conditions after every bout and again after Majority Scoring.</p>
-            
-            <ol>
-                <li><strong>Hands = Players</strong>
-                    <p>Once the table has completed a number of Collation Sessions equal to the number of scholars (e.g., four Sessions in a four-player game), proceed to Final Scoring (including that session's Majority Scoring).</p>
-                </li>
-                
-                <li><strong>Single-Grant Survivor</strong>
-                    <p>At the end of any Session, if only one scholar still has any unused Preservation-Grant markers, complete Majority Scoring for that Session and then proceed to Final Scoring.</p>
-                </li>
-                
-                <li><strong>Grant Exhaustion Mid-Session</strong>
-                    <p>If, during a Session, all Preservation-Grant markers are spent and there is no Tool card in play or on the Reading Desk that could refresh one, the Session ends immediately.</p>
-                    <ul>
-                        <li>Skip any remaining bouts.</li>
-                        <li>Conduct Majority Scoring for this partial Session (use the tokens already in Evidence Ledgers).</li>
-                        <li>Then proceed directly to Final Scoring.</li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-        
-        <p>If none of the above conditions occur, proceed to 6.4, Majority Scoring.</p>
-        
-        <h3>6.4 Conduct Majority Scoring</h3>
-        <p>See section 4.7.</p>
-        
-        <h3>6.5 Prepare for Additional Sessions</h3>
-        <ol>
-            <li>Collect all Witness and Tool cards, shuffle them into a fresh 60-card deck.</li>
-            <li>Flip every Archive-Lockdown tile face-up.</li>
-            <li>Do not refresh Preservation-Grant markers; they remain spent or unused as they stand.</li>
-            <li>Pass the Start-Player Quill clockwise.</li>
-        </ol>
-        
-        <p>When ready, begin the next Collation Session with the normal deal (step 2.3).</p>
-    </div>
-    
-    <!-- Page 8: Final Scoring -->
-    <div class="page">
-        <h2>Final Scoring</h2>
-        
-        <p>Work through the five steps below in order, tallying Prestige on the Prestige Track (★) as you go.</p>
-        
-        <div class="rule-note">
-            <p><strong>Edition Laureate Reminder:</strong> Make sure the Edition Laureate token is in front of the scholar who earned it. If, for any reason, the fifteenth Institutional slot was not filled, the token remains unclaimed and no one receives its bonus.</p>
-        </div>
-        
-        <h3>7.1 Feature Ladders</h3>
-        
-        <p>For each of the five Manuscript Features, score:</p>
-        
-        <table class="table">
-            <tr>
-                <th>Copies you hold</th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-                <th>7</th>
-                <th>8</th>
-                <th>9</th>
-                <th>10</th>
-                <th>11</th>
-            </tr>
-            <tr>
-                <td><strong>★ Prestige</strong></td>
-                <td>1</td>
-                <td>2</td>
-                <td>4</td>
-                <td>7</td>
-                <td>12</td>
-                <td>18</td>
-                <td>25</td>
-                <td>33</td>
-                <td>42</td>
-                <td>52</td>
-                <td>66</td>
-            </tr>
-        </table>
-        
-        <h3>7.2 Critical Sets</h3>
-        
-        <p>Group your remaining Features into as many complete sets of different Features as possible.</p>
-        
-        <ul>
-            <li>Each complete set of five different Features is worth +22★</li>
-            <li>A set of four different features is worth +16★</li>
-            <li>A set of three different features is worth +10★</li>
-            <li>Sets of one or two different features are not worth any Prestige</li>
-        </ul>
-        
-        <div class="rule-note">
-            <p>Cards may score simultaneously in ladders, majorities, and sets—you never "use up" a card by counting it in multiple categories.</p>
-        </div>
-        
-        <h3>7.3 Resource Bonuses</h3>
-        
-        <table class="table">
-            <tr>
-                <th>Item</th>
-                <th>★ Value</th>
-            </tr>
-            <tr>
-                <td>Unused Preservation-Grant marker</td>
-                <td>+2★ each</td>
-            </tr>
-            <tr>
-                <td>Edition Laureate token</td>
-                <td>+4★</td>
-            </tr>
-            <tr>
-                <td>First / Second Institution slots</td>
-                <td>Printed Value (+5★/+3★/+1★)</td>
-            </tr>
-            <tr>
-                <td>Unused Eureka Disc</td>
-                <td>+1★</td>
-            </tr>
-            <tr>
-                <td>Unused Research Cubes</td>
-                <td>-2★ each</td>
-            </tr>
-        </table>
-        
-        <h3>7.4 Determine the Editor-in-Chief</h3>
-        
-        <p>Add the ★ from steps 7.1–7.3 to any ★ you gained during play (Institution rewards, Edition Laureate, etc.).</p>
-        
-        <p>The scholar with the highest total Prestige is declared <strong>Editor-in-Chief</strong> of the new critical edition.</p>
-        
-        <div class="setup-box">
-            <h4>Tie-breakers</h4>
-            <p>If two or more scholars tie for Prestige, apply in order:</p>
-            <ol>
-                <li>More unused Preservation-Grant markers</li>
-                <li>More Lacuna Tokens</li>
-                <li>More total Feature tokens</li>
-                <li>More Feature Tokens in the Spotlight Color</li>
-                <li>Shared victory—publish a co-edited volume!</li>
-            </ol>
-        </div>
-    </div>
-    
-    <!-- Page 9: Card Reference - Witness Deck -->
-    <div class="page">
-        <h2>Card Reference</h2>
-        
-        <h3>8.1 Witness Deck (45)</h3>
-        
-        <p>Below is an explicit inventory of all 45 Witness cards, grouped by Scriptorium color (suit) and rank. Each line shows the rank followed by every icon printed on that card.</p>
-        
-        <div class="icon-key">
-            <h4>Key</h4>
-            <dl>
-                <dt>P</dt><dd>Papyrus Fragment</dd>
-                <dt>𝔐</dt><dd>Majority Text</dd>
-                <dt>א</dt><dd>Codex Sinaiticus</dd>
-                <dt>//</dt><dd>Section Division</dd>
-                <dt>{A}</dt><dd>UBS "A" rating</dd>
-                <dt>[…]</dt><dd>Lacuna</dd>
-                <dt>†</dt><dd>Corruption</dd>
-            </dl>
-            <p style="margin-top: 8pt;">• Icons separated by "+" all appear on the same card.</p>
-        </div>
-        
-        <h4>Beige – Alexandria (primary = P)</h4>
-        <ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
-            <li>→ […]</li>
-            <li>→ P</li>
-            <li>→ 𝔐</li>
-            <li>→ […]</li>
-            <li>→ P</li>
-            <li>→ † (Corruption)</li>
-            <li>→ P + P + […]</li>
-            <li>→ א + // + {A} (three different, none are P)</li>
-            <li>→ P + P + P</li>
-        </ol>
-        
-        <h4>Blue – Byzantium (primary = 𝔐)</h4>
-        <ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
-            <li>→ […]</li>
-            <li>→ 𝔐</li>
-            <li>→ א</li>
-            <li>→ […]</li>
-            <li>→ 𝔐</li>
-            <li>→ †</li>
-            <li>→ 𝔐 + 𝔐 + […]</li>
-            <li>→ P + // + {A}</li>
-            <li>→ 𝔐 + 𝔐 + 𝔐</li>
-        </ol>
-        
-        <h4>Orange – Antioch (primary = א)</h4>
-        <ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
-            <li>→ […]</li>
-            <li>→ א</li>
-            <li>→ //</li>
-            <li>→ […]</li>
-            <li>→ א</li>
-            <li>→ †</li>
-            <li>→ א + א + […]</li>
-            <li>→ P + 𝔐 + {A}</li>
-            <li>→ א + א + א</li>
-        </ol>
-        
-        <h4>Red – Ravenna (primary = //)</h4>
-        <ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
-            <li>→ […]</li>
-            <li>→ //</li>
-            <li>→ {A}</li>
-            <li>→ […]</li>
-            <li>→ //</li>
-            <li>→ †</li>
-            <li>→ // + // + […]</li>
-            <li>→ P + 𝔐 + א</li>
-            <li>→ // + // + //</li>
-        </ol>
-        
-        <h4>Green – Westminster (primary = {A})</h4>
-        <ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
-            <li>→ […]</li>
-            <li>→ {A}</li>
-            <li>→ P</li>
-            <li>→ […]</li>
-            <li>→ {A}</li>
-            <li>→ †</li>
-            <li>→ {A} + {A} + […]</li>
-            <li>→ 𝔐 + // + א</li>
-            <li>→ {A} + {A} + {A}</li>
-        </ol>
-    </div>
-    
-    <!-- Pages 10-24: Tool Deck Reference -->
-    <div class="page">
-        <h3>8.2 Tool Deck (75)</h3>
-        
-        <p>Cards T-1a through T-15e. Five variants of each rank 1–15.</p>
-        
-        <h4>Tier 1 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-1a</td>
-                    <td class="title-col">Palimpsest Scraper</td>
-                    <td class="timing-col">Instant or Anytime</td>
-                    <td class="effect-col">Choose one Feature, Lacuna, or Corruption token in your Evidence Ledger and one card on the Reading Desk. Place your chosen token onto the Desk. Take the chosen Desk card, immediately convert it to its matching token, add that token to your Ledger, and apply the usual Demand adjustment for that new token.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-1b</td>
-                    <td class="title-col">Ink Eraser</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Remove one card on the Reading Desk that shows a Corruption. Discard it to the box; no damage is dealt.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-1c</td>
-                    <td class="title-col">Synoptic Chart</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars simultaneously reveal one Witness card from hand, then return it. For each Feature color revealed by anyone, move that color's Demand peg up 1; for each color not revealed, move it down 1 (0–6 limits apply). Evaluate Spotlight.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-1d</td>
-                    <td class="title-col">Parchment Sizer</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Up to two Lacuna tokens in your Evidence Ledger each become a Feature token of your choice; for every token converted, move that Feature's Demand peg up 1 (max 6).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-1e</td>
-                    <td class="title-col">Quill Sharpener</td>
-                    <td class="timing-col">Delayed — trigger before a Primary play</td>
-                    <td class="effect-col">Set this Tool sideways as a reminder: for your very next Primary card you may ignore the follow-suit obligation (you may still choose to follow). Trump hierarchy is unchanged. The Tool remains sideways afterward to show it has been used.</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h4>Tier 2 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-2a</td>
-                    <td class="title-col">Fragment Facsimile</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Choose any one Feature token in your Evidence Ledger. Add an identical Feature token from the general supply to your Ledger, then move that Feature's Demand Marker up 1 step (maximum 6).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-2b</td>
-                    <td class="title-col">Scribal Index</td>
-                    <td class="timing-col">Instant or Anytime</td>
-                    <td class="effect-col">Move any one Demand Marker up 1 step and any different Demand Marker down 1 step (0 – 6 limits). Re-evaluate Spotlight immediately.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-2c</td>
-                    <td class="title-col">Catalog Concordance</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Every scholar—including you—takes one Lacuna token from the supply and adds it to their Evidence Ledger. Demand Markers do not move.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-2d</td>
-                    <td class="title-col">Gloss Collector</td>
-                    <td class="timing-col">Delayed — trigger after you claim a Desk</td>
-                    <td class="effect-col">You may fill one empty Institution slot by discarding only one matching Feature token instead of the usual two. After placing the cube, move that Feature's Demand Marker up 2 steps (maximum 6) as normal.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-2e</td>
-                    <td class="title-col">Major Reference</td>
-                    <td class="timing-col">Delayed — trigger during Majority Scoring</td>
-                    <td class="effect-col">Choose one Feature. For this Majority Scoring only, treat yourself as having +1 token of that Feature, then rotate this Tool to show it has been used. (Demand Markers are unaffected.)</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div class="page">
-        <h4>Tier 3 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-3a</td>
-                    <td class="title-col">Desalination Bath</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Remove up to two cards showing Corruption currently on the Reading Desk. Discard the removed cards to the box; they cause no immediate damage and never enter play.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-3b</td>
-                    <td class="title-col">Scriptorium Survey</td>
-                    <td class="timing-col">Instant or Anytime</td>
-                    <td class="effect-col">For every Feature whose Demand Marker is currently on 0, move that Marker up 1 step. Re-evaluate Spotlight.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-3c</td>
-                    <td class="title-col">Variant Matrix</td>
-                    <td class="timing-col">Delayed — trigger when you claim a Desk</td>
-                    <td class="effect-col">Choose any one Witness card in that Desk and double its yield (Feature or Lacuna) during tokenisation. Corruption cannot be doubled.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-3d</td>
-                    <td class="title-col">Glossator's Note</td>
-                    <td class="timing-col">Delayed — trigger anytime; effect lasts for the rest of this Hand</td>
-                    <td class="effect-col">Until this Hand ends, each Lacuna token you gain immediately converts to a Feature token of your choice (wild) and moves that Feature's Demand Marker up 1.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-3e</td>
-                    <td class="title-col">Critical Apparatus</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Pick one of your Research cubes already on an Institution board. Move it to any empty slot on another Institution; gain that slot's ★ and perk now, and move that Feature's Demand Marker up 2 as normal.</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h4>Tier 4 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-4a</td>
-                    <td class="title-col">Double-Take Crew</td>
-                    <td class="timing-col">Delayed — trigger during your turn in the Preservation Window</td>
-                    <td class="effect-col">If you declare Take for the current Reading Desk, you may discard any three Feature tokens from your Evidence Ledger. If you do, you take the Desk while paying 0 Preservation-Grant markers instead of one. (Discarded tokens have no Demand effect.)</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-4b</td>
-                    <td class="title-col">Spare Porter Team</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Choose one of your own Research cubes that is currently on an Institution Grant slot and remove it from the board. You forfeit the ★ value of that slot for Final Scoring. Any immediate perk you already gained (Grant refresh, Lacuna token, etc.) is unaffected. Then flip one of your spent Preservation-Grant markers back to its unused side.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-4c</td>
-                    <td class="title-col">Glossary Rush</td>
-                    <td class="timing-col">Delayed — trigger immediately after you place at least one Research cube</td>
-                    <td class="effect-col">For each cube you just placed, move that Feature's Demand Marker up 1 extra step (beyond the normal +2).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-4d</td>
-                    <td class="title-col">Gate Seal</td>
-                    <td class="timing-col">Delayed — trigger during your turn in a Preservation Window when you would Pass</td>
-                    <td class="effect-col">Play this Tool and treat your Pass as an Archive-Lockdown. Your personal Lockdown tile is unaffected (you may still use it in a later Window).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-4e</td>
-                    <td class="title-col">Express Scribe</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">After this Preservation Window closes, you will lead the next bout (take the Start-Player Quill), even if another scholar won the trick. If no further bouts remain, this card has no effect.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div class="page">
-        <h4>Tier 5 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-5a</td>
-                    <td class="title-col">Illumination Stylus</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Swap any two Demand Markers on the 0–6 track, then re-evaluate Spotlight.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-5b</td>
-                    <td class="title-col">Quire Tuck</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Place one Lacuna token from the supply onto the Reading Desk. Then choose a Feature color, take a matching Feature token from the supply into your Evidence Ledger, and move that Feature's Demand Marker up 1 (max 6).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-5c</td>
-                    <td class="title-col">Footnote Feint</td>
-                    <td class="timing-col">Delayed — end of Session</td>
-                    <td class="effect-col">If this Tool is in your Evidence Ledger when a Collation Session ends, it counts as 1 Feature token of your choice during that Session's Majority Scoring and Final Scoring. (Choose the color when scored.)</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-5d</td>
-                    <td class="title-col">Paleographic Ledger</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Spend 1 Lacuna token from your Evidence Ledger. Search the unused Tool cards that were set aside during setup and take any one Tool of the same rank or lower. Add that card to your hand. Choose any one card from your hand (Witness or Tool) and place it face-up on the current Reading Desk. Remove Paleographic Ledger from the game (return it to the box).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-5e</td>
-                    <td class="title-col">Colophon Sigil</td>
-                    <td class="timing-col">Delayed — trigger during Majority Scoring</td>
-                    <td class="effect-col">Choose one Feature color. For this Majority Scoring only, treat yourself as having +1 Feature token of that color.</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h4>Tier 6 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-6a</td>
-                    <td class="title-col">Quire Consolidator</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Choose any one Witness card in the current Reading Desk. Immediately tokenise that card into your Evidence Ledger (gain its Feature, Lacuna, or suffer its Corruption damage) and remove the card from the Desk. Apply the usual Demand adjustment for the new token.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-6b</td>
-                    <td class="title-col">Conservation Wash</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Remove every card showing Corruption currently in the Reading Desk—including cards just played in this bout. no damage is taken.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-6c</td>
-                    <td class="title-col">Ink Reclassification</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Exchange up to three Feature tokens from your Evidence Ledger with an equal number of Feature Witness cards or tokens currently on the Reading Desk. Place the tokens you give up onto the Reading Desk (they sit there for anyone to claim and do not affect Demand). Take the chosen Desk cards, immediately convert each to its matching Feature token, and add those tokens to your Ledger. Apply the usual Demand adjustment for any colors newly tokenised.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-6d</td>
-                    <td class="title-col">Archival Priority</td>
-                    <td class="timing-col">Delayed — trigger when you Take a Reading Desk, before tokenisation</td>
-                    <td class="effect-col">You may discard any number of Tool cards that are currently in that Desk. Place the chosen Tools face-up in the common discard pile (start one if none exists). For each discarded Tool, add one Lacuna token from the supply to the Reading Desk. The added Lacuna tokens are tokenised in the usual way and do not move Demand Markers.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-6e</td>
-                    <td class="title-col">Porter Consortium</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Each scholar, including you, may refresh one spent Preservation-Grant marker by discarding four Feature tokens of the same color from their own Evidence Ledger. Scholars decide independently; you may choose to pass.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div class="page">
-        <h4>Tier 7 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-7a</td>
-                    <td class="title-col">Codex Collator</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Choose one Feature color. Move that color's Demand Marker up 2 steps (max 6). For the next bout only, that color is treated as the Spotlight color, even if normal Spotlight rules would turn Spotlight off or select a different color. After that bout, Spotlight re-evaluates normally.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-7b</td>
-                    <td class="title-col">Reserve Shelf</td>
-                    <td class="timing-col">Delayed — trigger after you claim a Desk</td>
-                    <td class="effect-col">Move up to three tokens from your Evidence Ledger to a face-down Reserve pile in front of you. Reserve tokens are immune to Corruption damage and cannot be spent for Grants or Lacuna Exchange. They count as normal tokens at Majority and Final Scoring.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-7c</td>
-                    <td class="title-col">Grant Writer</td>
-                    <td class="timing-col">Delayed — trigger at any time</td>
-                    <td class="effect-col">Discard two Lacuna tokens from your Evidence Ledger. Then place one of your Research cubes on the left-most empty slot of any Institution without paying Feature tokens. Apply the slot's ★/perk and move that color's Demand Marker up 2 as usual.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-7d</td>
-                    <td class="title-col">Demand Reset</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Select any one Demand Marker and set it to 3 (baseline), ignoring whether this raises or lowers it. Re-evaluate Spotlight immediately.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-7e</td>
-                    <td class="title-col">Copyist Guild</td>
-                    <td class="timing-col">Delayed — trigger after you tokenise a Desk</td>
-                    <td class="effect-col">Choose any one Tool card that is now in that Desk. Place it into your hand (it may be played later in the same Session). Leave Copyist Guild on the Desk in its place.</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h4>Tier 8 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-8a</td>
-                    <td class="title-col">Marginal Gloss</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Choose any one Feature color. For the next bout only, that color is treated as the Spotlight color—even if normal rules would pick a different color or turn Spotlight off.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-8b</td>
-                    <td class="title-col">Elevation Stroke</td>
-                    <td class="timing-col">Delayed — trigger when you play a Primary Witness</td>
-                    <td class="effect-col">The Witness you are now playing counts as rank 10 (higher than 9) for this bout's ranking. Tool cards still outrank all Witnesses.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-8c</td>
-                    <td class="title-col">Ink Authority</td>
-                    <td class="timing-col">Delayed — trigger immediately before you play your Primary card</td>
-                    <td class="effect-col">You may play a Tool card as your Primary even if you still hold one or more cards of the lead suit. The played Tool keeps its normal trump status; your follow-suit obligation is considered satisfied for this bout.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-8d</td>
-                    <td class="title-col">Seize the Quill</td>
-                    <td class="timing-col">Delayed — trigger immediately after bout resolution</td>
-                    <td class="effect-col">Regardless of who won, take the Start-Player Quill and lead the next bout. (No effect if no bouts remain in the Session.)</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-8e</td>
-                    <td class="title-col">Scribe's Momentum</td>
-                    <td class="timing-col">Delayed — trigger immediately after the first player leads a card in any future bout, before the next player acts</td>
-                    <td class="effect-col">Announce that the Lead color for this bout is now the current Spotlight color instead of the color actually led. The card already on the table remains in play; it now counts as a card of the new Lead color. All follow-suit obligations for this bout use the new Lead color. Spotlight re-evaluates normally after the bout.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div class="page">
-        <h4>Tier 9 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-9a</td>
-                    <td class="title-col">Manuscript Vault</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Move up to three Feature or Lacuna tokens from your Evidence Ledger to a private Vault pile. Vaulted tokens are immune to Corruption damage and cannot be spent for Grants or Lacuna Exchange. They still count fully for Majority Scoring and Final Scoring.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-9b</td>
-                    <td class="title-col">Demand Surge</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Choose any one Feature color. Move that color's Demand Marker to 6. Spotlight is re-evaluated immediately. (Other Markers are unchanged.)</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-9c</td>
-                    <td class="title-col">Portico of Scholars</td>
-                    <td class="timing-col">Delayed — trigger during Majority Scoring</td>
-                    <td class="effect-col">Before tallying a single Feature of your choice, you may treat one Lacuna token in your Ledger as an additional token of that Feature. (It does not move Demand.)</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-9d</td>
-                    <td class="title-col">Rapid Collation</td>
-                    <td class="timing-col">Delayed — trigger when you Take a Desk</td>
-                    <td class="effect-col">After tokenising that Desk, you may immediately conduct an additional Institution Grant Check (discard tokens, place cubes, adjust Demand) even if you already performed one this turn.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-9e</td>
-                    <td class="title-col">Grand Patronage</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Immediately flip one of your spent Preservation-Grant markers back to its unused side. Then move every Feature's Demand Marker down 1 step (to a minimum of 0) to reflect sudden market saturation.</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h4>Tier 10 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-10a</td>
-                    <td class="title-col">Momentum Accelerator</td>
-                    <td class="timing-col">Delayed — trigger when you spend your Eureka disc</td>
-                    <td class="effect-col">Gain the normal +2 rank, but keep the Eureka disc instead of discarding it. Then place this Tool on the Reading Desk.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-10b</td>
-                    <td class="title-col">Deferred Impulse</td>
-                    <td class="timing-col">Delayed — trigger after Primary cards are revealed, before ranking</td>
-                    <td class="effect-col">You may spend your Eureka disc now (instead of before playing) to add +2 rank to your Primary card.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-10c</td>
-                    <td class="title-col">Momentum Forge</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Discard one Feature token from your Evidence Ledger to gain a Eureka disc (only if you don't already hold one).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-10d</td>
-                    <td class="title-col">Momentum Exchange</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">For the rest of the current Preservation Window, any scholar may spend a Eureka disc instead of a Preservation-Grant marker to take the Reading Desk. Normal rules resume once the window closes.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-10e</td>
-                    <td class="title-col">Eureka Archive</td>
-                    <td class="timing-col">Delayed — trigger exactly when you would receive the Eureka disc as highest losing card</td>
-                    <td class="effect-col">Instead of taking the Eureka disc: You become the winner of the bout. Take the Start-Player Quill; you will lead the next bout. Every other scholar who does not already hold a Eureka disc gains one from the supply. Place Momentum Overture on the Reading Desk; you receive no Eureka disc from this trigger.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div class="page">
-        <h4>Tier 11 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-11a</td>
-                    <td class="title-col">Statistical Model</td>
-                    <td class="timing-col">Delayed — trigger during Majority Scoring</td>
-                    <td class="effect-col">Choose one Feature color. For this Majority Scoring only, the second-most scholar(s) receive the +6 ★ bonus; the usual +3 ★ goes to third place. Ties share bonuses.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-11b</td>
-                    <td class="title-col">Citation Surge</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Choose any one Feature color. For the rest of this Collation Session, whenever any scholar tokenises a Witness of that color, move that color's Demand Marker up one extra step (in addition to the normal adjustment). Discard at Session end.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-11c</td>
-                    <td class="title-col">Lacunose Insight</td>
-                    <td class="timing-col">Delayed — trigger during Majority Scoring</td>
-                    <td class="effect-col">Choose up to two Lacuna tokens in your Evidence Ledger. For this Majority Scoring only, each chosen Lacuna counts as one Feature token of any color you declare (you may pick the same or two different colors). They revert to Lacuna immediately afterward.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-11d</td>
-                    <td class="title-col">Methodological Note</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Pick one Feature color. For the remainder of this Collation Session, that color cannot become Spotlight. Demand Markers still move normally.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-11e</td>
-                    <td class="title-col">Publication Embargo</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Identify the Institution whose Feature color matches the current Spotlight color and place this Tool on that board. No scholar may place Research cubes on that Institution until the beginning of the next bout. At the start of the next bout, remove Publication Embargo from the board and place it on the Reading Desk. If Spotlight is currently off (all five Demand Markers are tied), you instead choose any one Institution board to receive the embargo.</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h4>Tier 12 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-12a</td>
-                    <td class="title-col">Preservation Crisis</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars: Flip one unused Preservation-Grant marker to spent. If you have none, discard one Feature token of your choice instead.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-12b</td>
-                    <td class="title-col">Ink Bleed</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars: Every scholar must discard one Feature token of their choice from their Evidence Ledger. (Discarded tokens do not move Demand; they are simply lost.)</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-12c</td>
-                    <td class="title-col">Scriptorium Fire</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars: Each scholar discards two Feature tokens from their Evidence Ledger. For every token discarded, move that color's Demand Marker down 1 step (min 0).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-12d</td>
-                    <td class="title-col">Funding Cut</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars: Each scholar removes one of their Research cubes from any Institution board. If a scholar has no cubes on any board, they instead flip one unused Grant to spent. (Slots vacated will no longer score.)</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-12e</td>
-                    <td class="title-col">Catalogue Mix-Up</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars: Move every Demand Marker down 1 step (min 0). If this causes all five colors to tie for highest, Spotlight is off until normal rules assign a new one.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div class="page">
-        <h4>Tier 13 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-13a</td>
-                    <td class="title-col">Ink Erosion</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars discard one token of their most-held color; Demand -1 for each color discarded.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-13b</td>
-                    <td class="title-col">Scholar Symposium</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Each scholar passes one Feature or Lacuna token clockwise (If any scholar has no tokens in their ledger, he passes a Lacuna token from the supply).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-13c</td>
-                    <td class="title-col">Demand Equaliser</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Set every Demand Marker to 3; Spotlight is off until the next Demand movement.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-13d</td>
-                    <td class="title-col">Momentary Doubt</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Return all Eureka discs to the supply; no discs can be earned for the rest of this Session.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-13e</td>
-                    <td class="title-col">Session Interruption</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Current Session ends after this bout; do Majority Scoring and normal cleanup, then start next Session (or Final Scoring if triggered).</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h4>Tier 14 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-14a</td>
-                    <td class="title-col">Spotlight Surge</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">For each scholar, place one Feature token of the current Spotlight color from the supply onto the Reading Desk (face-up). These tokens are claimed and tokenised normally and do not move Demand Markers when added.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-14b</td>
-                    <td class="title-col">Spotlight Audit</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Every scholar discards one Feature token of the current Spotlight color from their Evidence Ledger, if they have any. After all discards, move that color's Demand Marker down 1 step (min 0).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-14c</td>
-                    <td class="title-col">Spotlight Lock</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">Place this card beside the Demand Track. Spotlight remains fixed on its current color until this Collation Session ends. Demand Markers still move, but Spotlight cannot change or turn off. At Session end, move the card to the Reading Desk.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-14d</td>
-                    <td class="title-col">Spotlight Majority Bonus</td>
-                    <td class="timing-col">Delayed — trigger during Majority Scoring</td>
-                    <td class="effect-col">If, at the start of Majority Scoring, the Spotlight color is the unique highest-demand color, every scholar scores +1 ★ for each token of that color in their Evidence Ledger. Discard this Tool after scoring.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-14e</td>
-                    <td class="title-col">Spotlight Archive</td>
-                    <td class="timing-col">Delayed — trigger immediately when you claim a Reading Desk before Demand adjustments</td>
-                    <td class="effect-col">If the Reading Desk you just claimed contains at least one Witness card of the current Spotlight color, you may play Spotlight Archive. Skip the normal –1 Demand adjustment for that Spotlight color this time. After skipping, move any one other Feature's Demand Marker up 1 step (max 6). Discard Spotlight Archive to the Reading Desk.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div class="page">
-        <h4>Tier 15 Tools</h4>
-        <table class="tool-table">
-            <thead>
-                <tr>
-                    <th width="10%">ID</th>
-                    <th width="20%">Title</th>
-                    <th width="20%">Timing</th>
-                    <th width="50%">Effect</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="id-col">T-15a</td>
-                    <td class="title-col">Preservation Windfall</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars: Flip one spent Preservation-Grant marker back to unused for every scholar.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-15b</td>
-                    <td class="title-col">Shared Inspiration</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars: Give a Eureka disc to every scholar; anyone who already had one instead scores +2 ★.</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-15c</td>
-                    <td class="title-col">Universal Lacuna+</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars: Each scholar gains two Lacuna tokens and one Feature token of their choice (no Demand shift).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-15d</td>
-                    <td class="title-col">Archive Highlight</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars: Each scholar gains one Feature token of the color they hold the fewest of (ties: player's choice).</td>
-                </tr>
-                <tr>
-                    <td class="id-col">T-15e</td>
-                    <td class="title-col">Collaborative Endowment</td>
-                    <td class="timing-col">Instant</td>
-                    <td class="effect-col">All scholars: In clockwise order, every scholar may place one Research cube on any empty Institution slot for free; apply the normal +2 Demand per cube. Scholars with no cubes instead flip one spent Grant to unused.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<li>1st: +2★</li>
+</ul>
+</li>
+</ul>
+<p>Keep score on the Score Track.</p>
+<h3>4.8 Prepare Next Bout</h3>
+<ol>
+<li>If every scholar's hand is empty, the Session ends—go to Final Scoring (§ 7).</li>
+<li>Otherwise the bout winner leads the next bout, repeating steps 4.1–4.7.</li>
+</ol>
+<div class="rule-note">
+<p><strong>Orphan Bout (4-player only)</strong> – After seven full two-card bouts, every scholar holds exactly one card. In that final bout skip the Echo step entirely; play only a Primary card, then resolve from step 4.2 onward.</p>
+</div>
+</div>
+<!-- Page 6: Institution Grants -->
+<div class="page-break"></div><div class="page">
+<h2>Institution Grants</h2>
+<p>The five Institution Boards represent great research libraries that will underwrite your edition if you deliver the manuscript evidence they prize.</p>
+<h3>5.1 Anatomy of an Institution Board</h3>
+<p>Each board shows:</p>
+<table class="table">
+<tr>
+<th>Element</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td><strong>Feature Seal</strong> (upper left)</td>
+<td>Indicates the type(s) of Manuscript Feature(s) this Institution will fund.</td>
+</tr>
+<tr>
+<td><strong>Three Grant slots</strong></td>
+<td>Empty circles, left-to-right. A scholar places a Research cube here when fulfilling the slot.</td>
+</tr>
+<tr>
+<td><strong>Reward banner</strong></td>
+<td>Printed quick icons: 5★ / +Grant, 3★ / +Lacuna, 1★ / –</td>
+</tr>
+</table>
+<div class="rule-note">
+<p><strong>Prestige symbol (★)</strong> One ★ equals one Prestige Point.</p>
+</div>
+<h3>5.2 Fulfilling a Grant</h3>
+<p>You may attempt one Grant immediately after you Take the Reading Desk:</p>
+<ol>
+<li><strong>Pay Feature Tokens</strong> – Place Feature tokens required by  the Institution onto their associated Demand Track one space per token.    
+<div><br/>
+</div>
+</li>
+<li><strong>Place cube &amp; gain reward</strong> – Put one of your Research cubes on the left-most empty slot of that Institution  and gain the printed reward.
+			   <div><br/>
+</div>
+</li>
+</ol>
+<h3>5.3 Edition Laureate Token</h3>
+<p>The moment the fifteenth and final Grant slot across the five boards is filled:</p>
+<ul>
+<li>Award the Edition Laureate token to the scholar who placed that closing cube. It grants the scholar an instant bonus: flip one spent Preservation-Grant marker back to unused. Additionally, the Edition Laureate token is worth +4★ Prestige at Final Scoring.</li>
+</ul>
+</div>
+<!-- Page 7: End of Session -->
+<div class="page-break"></div><div class="page">
+<h2>End-of-Session Checklist</h2>
+<p>A Collation Session ends the moment all scholars have emptied their hands and the final Preservation Window has been resolved.</p>
+<h3>6.1 Tokenise any Witness cards still on the Reading Desk</h3>
+<ul>
+<li>Convert each remaining Witness card to its matching Feature, Lacuna, or Corruption token and leave those tokens on the Reading Desk.</li>
+<li>Discard the physical cards (and any Tool cards still on the Desk) to the common discard so that the full 60-card deck can be reshuffled for the next deal.</li>
+<li>These tokens remain in the Reading Desk and will be part of the very first Preservation Window of the next Collation Session. (If you just finished the final Session, they have no further effect.)</li>
+</ul>
+<h3>6.2 Discard unused Tools in Tableau</h3>
+<h3>6.3 Check for End Game</h3>
+<div class="setup-box">
+<h4>Game-End Triggers</h4>
+<p>The game can finish in one of three ways. Check these conditions after every bout and again after Majority Scoring.</p>
+<ol>
+<li><strong>Hands = Players</strong>
+<p>Once the table has completed a number of Collation Sessions equal to the number of scholars (e.g., four Sessions in a four-player game), proceed to Final Scoring (including that session's Majority Scoring).</p>
+</li>
+<li><strong>Single-Grant Survivor</strong>
+<p>At the end of any Session, if only one scholar still has any unused Preservation-Grant markers, complete Majority Scoring for that Session and then proceed to Final Scoring.</p>
+</li>
+<li><strong>Grant Exhaustion Mid-Session</strong>
+<p>If, during a Session, all Preservation-Grant markers are spent and there is no Tool card in play or on the Reading Desk that could refresh one, the Session ends immediately.</p>
+<ul>
+<li>Skip any remaining bouts.</li>
+<li>Conduct Majority Scoring for this partial Session (use the tokens already in Evidence Ledgers).</li>
+<li>Then proceed directly to Final Scoring.</li>
+</ul>
+</li>
+</ol>
+</div>
+<p>If none of the above conditions occur, proceed to 6.4, Majority Scoring.</p>
+<h3>6.4 Conduct Majority Scoring</h3>
+<p>See section 4.7.</p>
+<h3>6.5 Prepare for Additional Sessions</h3>
+<ol>
+<li>Collect all Witness and Tool cards, shuffle them into a fresh 60-card deck.</li>
+<li>Flip every Archive-Lockdown tile face-up.</li>
+<li>Do not refresh Preservation-Grant markers; they remain spent or unused as they stand.</li>
+<li>Pass the Start-Player Quill clockwise.</li>
+</ol>
+<p>When ready, begin the next Collation Session with the normal deal (step 2.3).</p>
+</div>
+<!-- Page 8: Final Scoring -->
+<div class="page-break"></div><div class="page">
+<h2>Final Scoring</h2>
+<p>Work through the five steps below in order, tallying Prestige on the Prestige Track (★) as you go.</p>
+<div class="rule-note">
+<p><strong>Edition Laureate Reminder:</strong> Make sure the Edition Laureate token is in front of the scholar who earned it. If, for any reason, the fifteenth Institutional slot was not filled, the token remains unclaimed and no one receives its bonus.</p>
+</div>
+<h3>7.1 Feature Ladders</h3>
+<p>For each of the five Manuscript Features, score:</p>
+<table class="table">
+<tr>
+<th>Copies you hold</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+</tr>
+<tr>
+<td><strong>★ Prestige</strong></td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>7</td>
+<td>12</td>
+<td>18</td>
+<td>25</td>
+<td>33</td>
+<td>42</td>
+<td>52</td>
+<td>66</td>
+</tr>
+</table>
+<h3>7.2 Critical Sets</h3>
+<p>Group your remaining Features into as many complete sets of different Features as possible.</p>
+<ul>
+<li>Each complete set of five different Features is worth +22★</li>
+<li>A set of four different features is worth +16★</li>
+<li>A set of three different features is worth +10★</li>
+<li>Sets of one or two different features are not worth any Prestige</li>
+</ul>
+<div class="rule-note">
+<p>Feature Tokens may score simultaneously in ladders, majorities, and sets—you never "use up" a card by counting it in multiple categories, with the exception of personal goals.</p>
+</div>
+<h3>7.3 Resource Bonuses</h3>
+<table class="table">
+<tr>
+<th>Item</th>
+<th>★ Value</th>
+</tr>
+<tr>
+<td>Unused Preservation-Grant marker</td>
+<td>+2★ each</td>
+</tr>
+<tr>
+<td>Edition Laureate token</td>
+<td>+4★</td>
+</tr>
+<tr>
+<td>First / Second Institution slots</td>
+<td>Printed Value (+5★/+3★/+1★)</td>
+</tr>
+<tr>
+<td>Unused Eureka Disc</td>
+<td>+1★</td>
+</tr>
+<tr>
+<td>Unused Research Cubes</td>
+<td>-2★ each</td>
+</tr>
+</table>
+<h3>7.4 Determine the Editor-in-Chief</h3>
+<p>Add the ★ from steps 7.1–7.3 to any ★ you gained during play (Institution rewards, Edition Laureate, etc.).</p>
+<p>The scholar with the highest total Prestige is declared <strong>Editor-in-Chief</strong> of the new critical edition.</p>
+<div class="setup-box">
+<h4>Tie-breakers</h4>
+<p>If two or more scholars tie for Prestige, apply in order:</p>
+<ol>
+<li>More unused Preservation-Grant markers</li>
+<li>More Lacuna Tokens</li>
+<li>More total Feature tokens</li>
+<li>More Feature Tokens in the Spotlight Color</li>
+<li>Shared victory—publish a co-edited volume!</li>
+</ol>
+</div>
+</div>
+<!-- Page 9: Card Reference - Witness Deck -->
+<div class="page-break"></div><div class="page">
+<h2>Card Reference</h2>
+<h3>8.1 Witness Deck (45)</h3>
+<p>Below is an explicit inventory of all 45 Witness cards, grouped by Scriptorium color (suit) and rank. Each line shows the rank followed by every icon printed on that card.</p>
+<div class="icon-key">
+<h4>Key</h4>
+<dl>
+<dt>P</dt><dd>Papyrus Fragment</dd>
+<dt>𝔐</dt><dd>Majority Text</dd>
+<dt>א</dt><dd>Codex Sinaiticus</dd>
+<dt>//</dt><dd>Section Division</dd>
+<dt>{A}</dt><dd>UBS "A" rating</dd>
+<dt>[…]</dt><dd>Lacuna</dd>
+<dt>†</dt><dd>Corruption</dd>
+</dl>
+<p style="margin-top: 8pt;">• Icons separated by "+" all appear on the same card.</p>
+</div>
+<h4>Beige – Alexandria (primary = P)</h4>
+<ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
+<li>→ […]</li>
+<li>→ P</li>
+<li>→ 𝔐</li>
+<li>→ […]</li>
+<li>→ P</li>
+<li>→ † (Corruption)</li>
+<li>→ P + P + […]</li>
+<li>→ א + // + {A} (three different, none are P)</li>
+<li>→ P + P + P</li>
+</ol>
+<h4>Blue – Byzantium (primary = 𝔐)</h4>
+<ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
+<li>→ […]</li>
+<li>→ 𝔐</li>
+<li>→ א</li>
+<li>→ […]</li>
+<li>→ 𝔐</li>
+<li>→ †</li>
+<li>→ 𝔐 + 𝔐 + […]</li>
+<li>→ P + // + {A}</li>
+<li>→ 𝔐 + 𝔐 + 𝔐</li>
+</ol>
+<h4>Orange – Antioch (primary = א)</h4>
+<ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
+<li>→ […]</li>
+<li>→ א</li>
+<li>→ //</li>
+<li>→ […]</li>
+<li>→ א</li>
+<li>→ †</li>
+<li>→ א + א + […]</li>
+<li>→ P + 𝔐 + {A}</li>
+<li>→ א + א + א</li>
+</ol>
+<h4>Red – Ravenna (primary = //)</h4>
+<ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
+<li>→ […]</li>
+<li>→ //</li>
+<li>→ {A}</li>
+<li>→ […]</li>
+<li>→ //</li>
+<li>→ †</li>
+<li>→ // + // + […]</li>
+<li>→ P + 𝔐 + א</li>
+<li>→ // + // + //</li>
+</ol>
+<h4>Green – Westminster (primary = {A})</h4>
+<ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
+<li>→ […]</li>
+<li>→ {A}</li>
+<li>→ P</li>
+<li>→ […]</li>
+<li>→ {A}</li>
+<li>→ †</li>
+<li>→ {A} + {A} + […]</li>
+<li>→ 𝔐 + // + א</li>
+<li>→ {A} + {A} + {A}</li>
+</ol>
+</div>
+<!-- Pages 10-24: Tool Deck Reference -->
+<div class="page-break"></div><div class="page">
+<h3>8.2 Tool Deck (75)</h3>
+<p>Cards T-1a through T-15e. Five variants of each rank 1–15.</p>
+<h4>Tier 1 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-1a</td>
+<td class="title-col">Palimpsest Scraper</td>
+<td class="timing-col">Instant or Anytime</td>
+<td class="effect-col">Choose one Feature, Lacuna, or Corruption token in your Evidence Ledger and one card on the Reading Desk. Place your chosen token onto the Desk. Take the chosen Desk card, immediately convert it to its matching token, add that token to your Ledger, and apply the usual Demand adjustment for that new token.</td>
+</tr>
+<tr>
+<td class="id-col">T-1b</td>
+<td class="title-col">Ink Eraser</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Remove one card on the Reading Desk that shows a Corruption. Discard it to the box; no damage is dealt.</td>
+</tr>
+<tr>
+<td class="id-col">T-1c</td>
+<td class="title-col">Synoptic Chart</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars simultaneously reveal one Witness card from hand, then return it. For each Feature color revealed by anyone, move that color's Demand peg up 1; for each color not revealed, move it down 1 (0–6 limits apply). Evaluate Spotlight.</td>
+</tr>
+<tr>
+<td class="id-col">T-1d</td>
+<td class="title-col">Parchment Sizer</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Up to two Lacuna tokens in your Evidence Ledger each become a Feature token of your choice; for every token converted, move that Feature's Demand peg up 1 (max 6).</td>
+</tr>
+<tr>
+<td class="id-col">T-1e</td>
+<td class="title-col">Quill Sharpener</td>
+<td class="timing-col">Delayed — trigger before a Primary play</td>
+<td class="effect-col">Set this Tool sideways as a reminder: for your very next Primary card you may ignore the follow-suit obligation (you may still choose to follow). Trump hierarchy is unchanged. The Tool remains sideways afterward to show it has been used.</td>
+</tr>
+</tbody>
+</table>
+<h4>Tier 2 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-2a</td>
+<td class="title-col">Fragment Facsimile</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Choose any one Feature token in your Evidence Ledger. Add an identical Feature token from the Spotlight Demand Board.</td>
+</tr>
+<tr>
+<td class="id-col">T-2b</td>
+<td class="title-col">Scribal Index</td>
+<td class="timing-col">Instant or Anytime</td>
+<td class="effect-col">Move the topmost stack of Feature Tokens from any track on the Spotlight Demand Board and place it on the topmost space of any different Demand track. Re-evaluate Spotlight immediately.</td>
+</tr>
+<tr>
+<td class="id-col">T-2c</td>
+<td class="title-col">Catalog Concordance</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Every scholar—including you—takes one Lacuna token from the supply and adds it to their Evidence Ledger.</td>
+</tr>
+<tr>
+<td class="id-col">T-2d</td>
+<td class="title-col">Gloss Collector</td>
+<td class="timing-col">Delayed — trigger after you claim a Desk</td>
+<td class="effect-col">You may fill one empty Institution slot by discarding only one matching required Feature token. Place the Feature Token onto its Demand Track.</td>
+</tr>
+<tr>
+<td class="id-col">T-2e</td>
+<td class="title-col">Major Reference</td>
+<td class="timing-col">Delayed — trigger during Majority Scoring</td>
+<td class="effect-col">Choose one Feature. For this Majority Scoring only, treat yourself as having +1 token of that Feature, then rotate this Tool to show it has been used.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="page-break"></div><div class="page">
+<h4>Tier 3 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-3a</td>
+<td class="title-col">Desalination Bath</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Remove up to two cards showing Corruption currently on the Reading Desk. Discard the removed cards to the box; they cause no immediate damage and never enter play.</td>
+</tr>
+<tr>
+<td class="id-col">T-3b</td>
+<td class="title-col">Scriptorium Survey</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Take the topmost stack of the current spotlight Feature and place it on the topmost space of the track with the least demand. Re-evaluate Spotlight.</td>
+</tr>
+<tr>
+<td class="id-col">T-3c</td>
+<td class="title-col">Variant Matrix</td>
+<td class="timing-col">Delayed — trigger when you claim a Desk</td>
+<td class="effect-col">Choose any one Witness card in that Desk and double its yield (Feature or Lacuna) during tokenisation. Corruption cannot be doubled.</td>
+</tr>
+<tr>
+<td class="id-col">T-3d</td>
+<td class="title-col">Glossator's Note</td>
+<td class="timing-col">Delayed — trigger anytime; effect lasts for the rest of this Hand</td>
+<td class="effect-col">Until this Hand ends, each Lacuna token you gain immediately converts to a Feature token of your choice. Place the Lacuna token on the spot you took the Feature token from.</td>
+</tr>
+<tr>
+<td class="id-col">T-3e</td>
+<td class="title-col">Critical Apparatus</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Pick one of your Research cubes already on an Institution board. Move it to any empty slot on another Institution; gain that slot's ★ and perk now.</td>
+</tr>
+</tbody>
+</table>
+<h4>Tier 4 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-4a</td>
+<td class="title-col">Double-Take Crew</td>
+<td class="timing-col">Delayed — trigger during your turn in the Preservation Window</td>
+<td class="effect-col">If you declare Take for the current Reading Desk, you may discard any three Feature tokens from your Evidence Ledger. If you do, you take the Desk while paying 0 Preservation-Grant markers instead of one. (Discarded tokens have no Demand effect.)</td>
+</tr>
+<tr>
+<td class="id-col">T-4b</td>
+<td class="title-col">Spare Porter Team</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Choose one of your own Research cubes that is currently on an Institution Grant slot and remove it from the board. You forfeit the ★ value of that slot for Final Scoring. Any immediate perk you already gained (Grant refresh, Lacuna token, etc.) is unaffected. Then flip one of your spent Preservation-Grant markers back to its unused side.</td>
+</tr>
+<tr>
+<td class="id-col">T-4c</td>
+<td class="title-col">Old Guard</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">For the ramainder of the Session, Spotlight Demand is evaluated in reverse.</td>
+</tr>
+<tr>
+<td class="id-col">T-4d</td>
+<td class="title-col">Gate Seal</td>
+<td class="timing-col">Delayed — trigger during your turn in a Preservation Window when you would Pass</td>
+<td class="effect-col">Play this Tool and treat your Pass as an Archive-Lockdown. Your personal Lockdown tile is unaffected (you may still use it in a later Window).</td>
+</tr>
+<tr>
+<td class="id-col">T-4e</td>
+<td class="title-col">Express Scribe</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">After this Preservation Window closes, you will lead the next bout (take the Start-Player Quill), even if another scholar won the trick. If no further bouts remain, this card has no effect.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="page-break"></div><div class="page">
+<h4>Tier 5 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-5a</td>
+<td class="title-col">Illumination Stylus</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Swap any two stacks of Feature Tokens from different tracks.</td>
+</tr>
+<tr>
+<td class="id-col">T-5b</td>
+<td class="title-col">Quire Tuck</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Place one Lacuna token from the supply onto the Reading Desk. Then choose a Feature color, take a matching Feature token from Demand Track into your Evidence Ledger.</td>
+</tr>
+<tr>
+<td class="id-col">T-5c</td>
+<td class="title-col">Footnote Feint</td>
+<td class="timing-col">Delayed — end of Session</td>
+<td class="effect-col">If this Tool is in your Evidence Ledger when a Collation Session ends, it counts as 1 Feature token of your choice during that Session's Majority Scoring and Final Scoring. (Choose the color when scored.)</td>
+</tr>
+<tr>
+<td class="id-col">T-5d</td>
+<td class="title-col">Paleographic Ledger</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Spend 1 Lacuna token from your Evidence Ledger. Search the unused Tool cards that were set aside during setup and take any one Tool of the same rank or lower. Add that card to your hand. Choose any one card from your hand (Witness or Tool) and place it face-up on the current Reading Desk. Remove Paleographic Ledger from the game (return it to the box).</td>
+</tr>
+<tr>
+<td class="id-col">T-5e</td>
+<td class="title-col">Colophon Sigil</td>
+<td class="timing-col">Delayed — trigger during Majority Scoring</td>
+<td class="effect-col">Choose one Feature color. For this Majority Scoring only, treat yourself as having +1 Feature token of that color.</td>
+</tr>
+</tbody>
+</table>
+<h4>Tier 6 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-6a</td>
+<td class="title-col">Quire Consolidator</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Choose any one Witness card in the current Reading Desk. Immediately tokenise that card into your Evidence Ledger (gain its Feature, Lacuna, or suffer its Corruption damage) and remove the card from the Desk. Apply the usual Demand adjustment for the new token.</td>
+</tr>
+<tr>
+<td class="id-col">T-6b</td>
+<td class="title-col">Conservation Wash</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Remove every card showing Corruption currently in the Reading Desk—including cards just played in this bout. no damage is taken.</td>
+</tr>
+<tr>
+<td class="id-col">T-6c</td>
+<td class="title-col">Ink Reclassification</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Exchange up to three Feature tokens from your Evidence Ledger with an equal number of Feature Witness cards or tokens currently on the Reading Desk. Place the tokens you give up onto the Reading Desk (they sit there for anyone to claim and do not affect Demand). Take the chosen Desk cards, immediately convert each to its matching Feature token, and add those tokens to your Ledger. Apply the usual Demand adjustment for any colors newly tokenised.</td>
+</tr>
+<tr>
+<td class="id-col">T-6d</td>
+<td class="title-col">Archival Priority</td>
+<td class="timing-col">Delayed — trigger when you Take a Reading Desk, before tokenisation</td>
+<td class="effect-col">You may discard any number of Tool cards that are currently in that Desk. Place the chosen Tools face-up in the common discard pile (start one if none exists). For each discarded Tool, add one Lacuna token from the supply to the Reading Desk.</td>
+</tr>
+<tr>
+<td class="id-col">T-6e</td>
+<td class="title-col">Porter Consortium</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Each scholar, including you, may refresh one spent Preservation-Grant marker by discarding four Feature tokens of the same color from their own Evidence Ledger. Scholars decide independently; you may choose to pass.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="page-break"></div><div class="page">
+<h4>Tier 7 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-7a</td>
+<td class="title-col">Codex Collator</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Choose one Demand Track. Take up to 2 Feature Tokens from its topmost stack with more than one token, place the token(s) on the lowest open spaces on the track, one token per space. For the next bout only, that color is treated as the Spotlight color, even if normal Spotlight rules would turn Spotlight off or select a different color. After that bout, Spotlight re-evaluates normally.</td>
+</tr>
+<tr>
+<td class="id-col">T-7b</td>
+<td class="title-col">Reserve Shelf</td>
+<td class="timing-col">Delayed — trigger after you claim a Desk</td>
+<td class="effect-col">Move up to three tokens from your Evidence Ledger to a face-down Reserve pile in front of you. Reserve tokens are immune to Corruption damage and cannot be spent for Grants or Lacuna Exchange. They count as normal tokens at Majority and Final Scoring.</td>
+</tr>
+<tr>
+<td class="id-col">T-7c</td>
+<td class="title-col">Grant Writer</td>
+<td class="timing-col">Delayed — trigger at any time</td>
+<td class="effect-col">Discard two Lacuna tokens from your Evidence Ledger. Then place one of your Research cubes on the left-most empty slot of any Institution without paying Feature tokens. Apply the slot's ★ or perk, but not both.</td>
+</tr>
+<tr>
+<td class="id-col">T-7d</td>
+<td class="title-col">Demand Reset</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Select any one Demand Marker and set it to 3 (baseline), ignoring whether this raises or lowers it. Re-evaluate Spotlight immediately.</td>
+</tr>
+<tr>
+<td class="id-col">T-7e</td>
+<td class="title-col">Copyist Guild</td>
+<td class="timing-col">Delayed — trigger after you tokenise a Desk</td>
+<td class="effect-col">Choose any one Tool card that is now in that Desk. Place it into your hand (it may be played later in the same Session). Leave Copyist Guild on the Desk in its place.</td>
+</tr>
+</tbody>
+</table>
+<h4>Tier 8 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-8a</td>
+<td class="title-col">Marginal Gloss</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Choose any one Feature color. For the next bout only, that color is treated as the Spotlight color—even if normal rules would pick a different color or turn Spotlight off.</td>
+</tr>
+<tr>
+<td class="id-col">T-8b</td>
+<td class="title-col">Elevation Stroke</td>
+<td class="timing-col">Delayed — trigger when you play a Primary Witness</td>
+<td class="effect-col">The Witness you are now playing counts as rank 10 (higher than 9) for this bout's ranking. Tool cards still outrank all Witnesses.</td>
+</tr>
+<tr>
+<td class="id-col">T-8c</td>
+<td class="title-col">Ink Authority</td>
+<td class="timing-col">Delayed — trigger immediately before you play your Primary card</td>
+<td class="effect-col">You may play a Tool card as your Primary even if you still hold one or more cards of the lead suit. The played Tool keeps its normal trump status; your follow-suit obligation is considered satisfied for this bout.</td>
+</tr>
+<tr>
+<td class="id-col">T-8d</td>
+<td class="title-col">Seize the Quill</td>
+<td class="timing-col">Delayed — trigger immediately after bout resolution</td>
+<td class="effect-col">Regardless of who won, take the Start-Player Quill and lead the next bout. (No effect if no bouts remain in the Session.)</td>
+</tr>
+<tr>
+<td class="id-col">T-8e</td>
+<td class="title-col">Scribe's Momentum</td>
+<td class="timing-col">Delayed — trigger immediately after the first player leads a card in any future bout, before the next player acts</td>
+<td class="effect-col">Announce that the Lead color for this bout is now the current Spotlight color instead of the color actually led. The card already on the table remains in play; it now counts as a card of the new Lead color. All follow-suit obligations for this bout use the new Lead color. Spotlight re-evaluates normally after the bout.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="page-break"></div><div class="page">
+<h4>Tier 9 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-9a</td>
+<td class="title-col">Manuscript Vault</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Move up to three Feature or Lacuna tokens from your Evidence Ledger to a private Vault pile. Vaulted tokens are immune to Corruption damage and cannot be spent for Grants or Lacuna Exchange. They still count fully for Majority Scoring and Final Scoring.</td>
+</tr>
+<tr>
+<td class="id-col">T-9b</td>
+<td class="title-col">Demand Surge</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Choose any one Feature color. Move that color's Demand Marker to 6. Spotlight is re-evaluated immediately. (Other Markers are unchanged.)</td>
+</tr>
+<tr>
+<td class="id-col">T-9c</td>
+<td class="title-col">Portico of Scholars</td>
+<td class="timing-col">Delayed — trigger during Majority Scoring</td>
+<td class="effect-col">Before tallying a single Feature of your choice, you may treat one Lacuna token in your Ledger as an additional token of that Feature. (It does not move Demand.)</td>
+</tr>
+<tr>
+<td class="id-col">T-9d</td>
+<td class="title-col">Rapid Collation</td>
+<td class="timing-col">Delayed — trigger when you Take a Desk</td>
+<td class="effect-col">After tokenising that Desk, you may immediately conduct an additional Institution Grant Check (discard tokens, place cubes, adjust Demand) even if you already performed one this turn.</td>
+</tr>
+<tr>
+<td class="id-col">T-9e</td>
+<td class="title-col">Grand Patronage</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Immediately flip one of your spent Preservation-Grant markers back to its unused side. Then remove a feature token from each Demand track and distribute them evenly to the other scholars, beginning with the scholar on your left (if any tracks are empty, use Lacuna tokens).</td>
+</tr>
+</tbody>
+</table>
+<h4>Tier 10 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-10a</td>
+<td class="title-col">Momentum Accelerator</td>
+<td class="timing-col">Delayed — trigger when you spend your Eureka disc</td>
+<td class="effect-col">Gain the normal +2 rank, but keep the Eureka disc instead of discarding it. Then place this Tool on the Reading Desk.</td>
+</tr>
+<tr>
+<td class="id-col">T-10b</td>
+<td class="title-col">Deferred Impulse</td>
+<td class="timing-col">Delayed — trigger after Primary cards are revealed, before ranking</td>
+<td class="effect-col">You may spend your Eureka disc now (instead of before playing) to add +2 rank to your Primary card.</td>
+</tr>
+<tr>
+<td class="id-col">T-10c</td>
+<td class="title-col">Momentum Forge</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Discard one Feature token from your Evidence Ledger to gain a Eureka disc (only if you don't already hold one).</td>
+</tr>
+<tr>
+<td class="id-col">T-10d</td>
+<td class="title-col">Momentum Exchange</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">For the rest of the current Preservation Window, any scholar may spend a Eureka disc instead of a Preservation-Grant marker to take the Reading Desk. Normal rules resume once the window closes.</td>
+</tr>
+<tr>
+<td class="id-col">T-10e</td>
+<td class="title-col">Eureka Archive</td>
+<td class="timing-col">Delayed — trigger exactly when you would receive the Eureka disc as highest losing card</td>
+<td class="effect-col">Instead of taking the Eureka disc: You become the winner of the bout. Take the Start-Player Quill; you will lead the next bout. Every other scholar who does not already hold a Eureka disc gains one from the supply. Place Momentum Overture on the Reading Desk; you receive no Eureka disc from this trigger.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="page-break"></div><div class="page">
+<h4>Tier 11 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-11a</td>
+<td class="title-col">Statistical Model</td>
+<td class="timing-col">Delayed — trigger during Majority Scoring</td>
+<td class="effect-col">Choose one Feature color. For this Majority Scoring only, the second-most scholar(s) receive the +6 ★ bonus; the usual +3 ★ goes to third place. Ties share bonuses.</td>
+</tr>
+<tr>
+<td class="id-col">T-11b</td>
+<td class="title-col">Citation Surge</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Choose any one Feature color. For the rest of this Collation Session, whenever any scholar tokenises a Witness of that color, move that color's Demand Marker up one extra step (in addition to the normal adjustment). Discard at Session end.</td>
+</tr>
+<tr>
+<td class="id-col">T-11c</td>
+<td class="title-col">Lacunose Insight</td>
+<td class="timing-col">Delayed — trigger during Majority Scoring</td>
+<td class="effect-col">Choose up to two Lacuna tokens in your Evidence Ledger. For this Majority Scoring only, each chosen Lacuna counts as one Feature token of any color you declare (you may pick the same or two different colors). They revert to Lacuna immediately afterward.</td>
+</tr>
+<tr>
+<td class="id-col">T-11d</td>
+<td class="title-col">Methodological Note</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Pick one Feature color. For the remainder of this Collation Session, that color cannot become Spotlight. It is ignored in evaluation.</td>
+</tr>
+<tr>
+<td class="id-col">T-11e</td>
+<td class="title-col">Publication Embargo</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Identify the Institution whose Feature color matches the current Spotlight color and place this Tool on that board. No scholar may place Research cubes on that Institution until the beginning of the next bout. At the start of the next bout, remove Publication Embargo from the board and place it on the Reading Desk. If Spotlight is currently off (all five Demand tracks are tied), you instead choose any one Institution board to receive the embargo.</td>
+</tr>
+</tbody>
+</table>
+<h4>Tier 12 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-12a</td>
+<td class="title-col">Preservation Crisis</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars: Flip one unused Preservation-Grant marker to spent. If you have none, discard one Feature token of your choice instead.</td>
+</tr>
+<tr>
+<td class="id-col">T-12b</td>
+<td class="title-col">Ink Bleed</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars: Every scholar must discard one Feature token of their choice from their Evidence Ledger. (Discarded tokens do not move Demand; they are simply lost.)</td>
+</tr>
+<tr>
+<td class="id-col">T-12c</td>
+<td class="title-col">Scriptorium Fire</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars: Each scholar discards two Feature tokens from their Evidence Ledger. They are not returned to the Demand Track, but placed in the supply (They were destroyed in the fire).</td>
+</tr>
+<tr>
+<td class="id-col">T-12d</td>
+<td class="title-col">Funding Cut</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars: Each scholar removes one of their Research cubes from any Institution board. If a scholar has no cubes on any board, they instead flip one unused Grant to spent. (Slots vacated will no longer score.)</td>
+</tr>
+<tr>
+<td class="id-col">T-12e</td>
+<td class="title-col">Catalogue Mix-Up</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars: Move every Demand Marker down 1 step (min 0). If this causes all five colors to tie for highest, Spotlight is off until normal rules assign a new one.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="page-break"></div><div class="page">
+<h4>Tier 13 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-13a</td>
+<td class="title-col">Ink Erosion</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars discard one token of their most-held color; Demand -1 for each color discarded.</td>
+</tr>
+<tr>
+<td class="id-col">T-13b</td>
+<td class="title-col">Scholar Symposium</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Each scholar passes one Feature or Lacuna token clockwise (If any scholar has no tokens in their ledger, he passes a Lacuna token from the supply).</td>
+</tr>
+<tr>
+<td class="id-col">T-13c</td>
+<td class="title-col">Demand Equaliser</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">On the Spotlight Board, Taking from the highest first, redistribute stacks of feature tokens until all tracks are as close to equal as possible.</td>
+</tr>
+<tr>
+<td class="id-col">T-13d</td>
+<td class="title-col">Momentary Doubt</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Return all Eureka discs to the supply; no discs can be earned for the rest of this Session.</td>
+</tr>
+<tr>
+<td class="id-col">T-13e</td>
+<td class="title-col">Session Interruption</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Current Session ends after this bout; do Majority Scoring and normal cleanup, then start next Session (or Final Scoring if triggered).</td>
+</tr>
+</tbody>
+</table>
+<h4>Tier 14 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-14a</td>
+<td class="title-col">Spotlight Surge</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">For each scholar, place one Feature token of the current Spotlight color from the supply onto the Reading Desk.</td>
+</tr>
+<tr>
+<td class="id-col">T-14b</td>
+<td class="title-col">Spotlight Audit</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Every scholar discards one Feature token of the current Spotlight color from their Evidence Ledger, if they have any, and places it back onto its Demand Track in a single space as one stack.</td>
+</tr>
+<tr>
+<td class="id-col">T-14c</td>
+<td class="title-col">Spotlight Lock</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">Place this card beside the Demand Track. Spotlight remains fixed on its current color until this Collation Session ends. Demand still changes, but Spotlight cannot change or turn off. At Session end, move the card to the Reading Desk.</td>
+</tr>
+<tr>
+<td class="id-col">T-14d</td>
+<td class="title-col">Spotlight Majority Bonus</td>
+<td class="timing-col">Delayed — trigger during Majority Scoring</td>
+<td class="effect-col">If, at the start of Majority Scoring, the Spotlight color is the unique highest-demand color, every scholar scores +1 ★ for each token of that color in their Evidence Ledger. Discard this Tool after scoring.</td>
+</tr>
+<tr>
+<td class="id-col">T-14e</td>
+<td class="title-col">Spotlight Archive</td>
+<td class="timing-col">Delayed — trigger immediately when you claim a Reading Desk before Demand adjustments</td>
+<td class="effect-col">If the Reading Desk you just claimed contains at least one Witness card of the current Spotlight color, you may play Spotlight Archive. instead of taking from that feature's track, take from any other track. Discard Spotlight Archive to the Reading Desk.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="page-break"></div><div class="page">
+<h4>Tier 15 Tools</h4>
+<table class="tool-table">
+<thead>
+<tr>
+<th width="10%">ID</th>
+<th width="20%">Title</th>
+<th width="20%">Timing</th>
+<th width="50%">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="id-col">T-15a</td>
+<td class="title-col">Preservation Windfall</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars: Flip one spent Preservation-Grant marker back to unused for every scholar.</td>
+</tr>
+<tr>
+<td class="id-col">T-15b</td>
+<td class="title-col">Shared Inspiration</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars: Give a Eureka disc to every scholar; anyone who already had one instead scores +2 ★.</td>
+</tr>
+<tr>
+<td class="id-col">T-15c</td>
+<td class="title-col">Universal Lacuna+</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars: Each scholar gains two Lacuna tokens and one Feature token of their choice (no Demand shift).</td>
+</tr>
+<tr>
+<td class="id-col">T-15d</td>
+<td class="title-col">Archive Highlight</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars: Each scholar gains one Feature token of the color they hold the fewest of (ties: player's choice).</td>
+</tr>
+<tr>
+<td class="id-col">T-15e</td>
+<td class="title-col">Collaborative Endowment</td>
+<td class="timing-col">Instant</td>
+<td class="effect-col">All scholars: In clockwise order, every scholar may place one Research cube on any empty Institution slot for free; apply the normal +2 Demand per cube. Scholars with no cubes instead flip one spent Grant to unused.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<script>
+window.onload = function () {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach((page, index) => {
+        const number = document.createElement('div');
+        number.className = 'page-number';
+        number.textContent = `Page ${index + 1}`;
+        page.appendChild(number);
+    });
+};
+</script>
 </body>
 </html>
