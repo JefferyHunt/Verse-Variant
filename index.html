@@ -843,7 +843,8 @@
 <div class="icon-key">
 <h4>Key</h4>
 <dl>
-<dt>P</dt><dd>Papyrus Fragment</dd>
+<dt>𝔓&nbsp;</dt>
+<dd>Papyrus Fragment</dd>
 <dt>𝔐</dt><dd>Majority Text</dd>
 <dt>א</dt><dd>Codex Sinaiticus</dd>
 <dt>//</dt><dd>Section Division</dd>
@@ -853,19 +854,19 @@
 </dl>
 <p style="margin-top: 8pt;">• Icons separated by "+" all appear on the same card.</p>
 </div>
-<h4>Beige – Alexandria (primary = P)</h4>
+<h4>Blue – Alexandria (primary = P)</h4>
 <ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
 <li>→ […]</li>
-<li>→ P</li>
+<li>→ 𝔓</li>
 <li>→ 𝔐</li>
 <li>→ […]</li>
-<li>→ P</li>
+<li>→ 𝔓</li>
 <li>→ † (Corruption)</li>
-<li>→ P + P + […]</li>
+<li>→ 𝔓 + 𝔓 + […]</li>
 <li>→ א + // + {A} (three different, none are P)</li>
-<li>→ P + P + P</li>
+<li>→ 𝔓 + 𝔓 + 𝔓</li>
 </ol>
-<h4>Blue – Byzantium (primary = 𝔐)</h4>
+<h4>Green– Byzantium (primary = 𝔐)</h4>
 <ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
 <li>→ […]</li>
 <li>→ 𝔐</li>
@@ -874,10 +875,10 @@
 <li>→ 𝔐</li>
 <li>→ †</li>
 <li>→ 𝔐 + 𝔐 + […]</li>
-<li>→ P + // + {A}</li>
+<li>→ 𝔓 + // + {A}</li>
 <li>→ 𝔐 + 𝔐 + 𝔐</li>
 </ol>
-<h4>Orange – Antioch (primary = א)</h4>
+<h4>Yellow – Antioch (primary = א)</h4>
 <ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
 <li>→ […]</li>
 <li>→ א</li>
@@ -886,7 +887,7 @@
 <li>→ א</li>
 <li>→ †</li>
 <li>→ א + א + […]</li>
-<li>→ P + 𝔐 + {A}</li>
+<li>→ 𝔓 + 𝔐 + {A}</li>
 <li>→ א + א + א</li>
 </ol>
 <h4>Red – Ravenna (primary = //)</h4>
@@ -898,14 +899,14 @@
 <li>→ //</li>
 <li>→ †</li>
 <li>→ // + // + […]</li>
-<li>→ P + 𝔐 + א</li>
+<li>→ 𝔓 + 𝔐 + א</li>
 <li>→ // + // + //</li>
 </ol>
-<h4>Green – Westminster (primary = {A})</h4>
+<h4>Black– Westminster (primary = {A})</h4>
 <ol style="font-family: 'Courier New', monospace; font-size: 10pt;">
 <li>→ […]</li>
 <li>→ {A}</li>
-<li>→ P</li>
+<li>→ 𝔓</li>
 <li>→ […]</li>
 <li>→ {A}</li>
 <li>→ †</li>
@@ -1215,7 +1216,11 @@
 <td class="id-col">T-7d</td>
 <td class="title-col">Demand Reset</td>
 <td class="timing-col">Instant</td>
-<td class="effect-col">Select any one Demand Marker and set it to 3 (baseline), ignoring whether this raises or lowers it. Re-evaluate Spotlight immediately.</td>
+<td class="effect-col">Choose one Feature track. Take the topmost Feature token from that track.
+
+If the token was the last token in the stack for that space or if there are no empty spaces above it, place it into your Evidence Ledger.
+If the token was not the last token in the stack and there is an empty space above it, place it onto the empty space directly above the space it was taken from.
+Spotlight is immediately re-evaluated.</td>
 </tr>
 <tr>
 <td class="id-col">T-7e</td>
@@ -1291,7 +1296,11 @@
 <td class="id-col">T-9b</td>
 <td class="title-col">Demand Surge</td>
 <td class="timing-col">Instant</td>
-<td class="effect-col">Choose any one Feature color. Move that color's Demand Marker to 6. Spotlight is re-evaluated immediately. (Other Markers are unchanged.)</td>
+<td class="effect-col">Choose one Feature track. Take the two topmost Feature tokens from that track.
+
+If the second token taken results in the space it was taken from becoming empty (it was the last token in the stack) or if there are not two empty spaces above it, then place the tokens onto the Reading Desk.
+If the second token was not the last token in the stack and there are two empty spaces above it, place the tokens onto the two empty spaces directly above the space they were taken from.
+Spotlight is immediately re-evaluated.</td>
 </tr>
 <tr>
 <td class="id-col">T-9c</td>
@@ -1378,8 +1387,8 @@
 <tr>
 <td class="id-col">T-11b</td>
 <td class="title-col">Citation Surge</td>
-<td class="timing-col">Instant</td>
-<td class="effect-col">Choose any one Feature color. For the rest of this Collation Session, whenever any scholar tokenises a Witness of that color, move that color's Demand Marker up one extra step (in addition to the normal adjustment). Discard at Session end.</td>
+<td class="timing-col">Delayed — When you take the Reading Desk</td>
+<td class="effect-col">During the current Preservation Window, for each Lacuna token you gain, you may remove one Feature token from any Spotlight Demand Track and place it into your Evidence Ledger.</td>
 </tr>
 <tr>
 <td class="id-col">T-11c</td>
@@ -1440,7 +1449,7 @@
 <td class="id-col">T-12e</td>
 <td class="title-col">Catalogue Mix-Up</td>
 <td class="timing-col">Instant</td>
-<td class="effect-col">All scholars: Move every Demand Marker down 1 step (min 0). If this causes all five colors to tie for highest, Spotlight is off until normal rules assign a new one.</td>
+<td class="effect-col">Remove one Feature token from the Spotlight Demand Board and place it into your Evidence Ledger.</td>
 </tr>
 </tbody>
 </table>
